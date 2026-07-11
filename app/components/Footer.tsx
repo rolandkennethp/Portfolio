@@ -8,7 +8,7 @@ const anton = Anton({
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-black px-8 pb-10 pt-20 lg:px-16">
+    <footer className="w-full bg-black px-8 pb-10 pt-20 border-t border-white/15 lg:px-16">
       
 
      

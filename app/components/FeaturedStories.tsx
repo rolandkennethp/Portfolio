@@ -46,7 +46,7 @@ const PROJECTS: Project[] = [
 
 export default function FeaturedStories() {
   return (
-    <section className="w-full border-b-[0.5px] border-white/15 bg-black px-8 py-20 lg:px-16">
+    <section className="w-full  bg-black px-8 py-20 lg:px-16">
       <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
         <div>
           <p className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]">

@@ -19,7 +19,7 @@ export default function Navbar() {
     const pathname = usePathname();
 
   return (
-    <header className="w-full backdrop-blur-3xl bg-black/20 border-b-[0.5px] top-0 sticky z-40 border-white/14">
+    <header className="w-full backdrop-blur-3xl bg-black/60 border-b-[0.5px] top-0 sticky z-40 border-white/14">
       <nav className="flex h-fit py-3 w-full items-center justify-between px-8 lg:px-16">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
