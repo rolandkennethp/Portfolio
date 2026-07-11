@@ -70,7 +70,7 @@ export default function FeaturedStories() {
         </a>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
             <Link key={project.title} href={project.href}>  
           <div
