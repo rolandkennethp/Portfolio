@@ -35,7 +35,7 @@ export default function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
-              href="#projects"
+              href="/projects"
               className="flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-[13px] font-light tracking-wide text-black hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20"
             >
               EXPLORE PROJECTS
