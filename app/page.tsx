@@ -3,11 +3,27 @@
 import { useEffect, useState } from "react";
 import FilmLoading from "./components/FilmLoading";
 import OpeningCredits from "./components/OpeningCredits";
-import Portfolio from "./components/Portfolio";
+import Navbar from "./components/NavBar";
+import Hero from "./components/Hero";
+import FeaturedStories from "./components/FeaturedStories";
+import Footer from "./components/Footer";
 
 export default function Home() {
+  
   const [filmFinished, setFilmFinished] = useState(false);
   const [creditsFinished, setCreditsFinished] = useState(false);
+
+  useEffect(() => {
+  if (!creditsFinished) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, [creditsFinished]);
 
   useEffect(() => {
     const timer1 = setTimeout(() => {
@@ -25,8 +41,11 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
-      <Portfolio />
+    <main className="min-h-screen w-full bg-black">
+      <Navbar />
+      <Hero />
+      <FeaturedStories />
+      <Footer />
 
       {!creditsFinished && (
         <OpeningCredits
