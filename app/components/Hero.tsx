@@ -1,5 +1,5 @@
 import { Bebas_Neue } from "next/font/google";
-import { ArrowUpRight, Download, ChevronDown } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
 
 const bebas = Bebas_Neue({
   subsets: ["latin"],
@@ -59,8 +59,8 @@ export default function Hero() {
 
           <div className="relative flex h-64 w-64 items-center justify-center rounded-full border border-[#D8B04A]/40">
             <div className="absolute h-56 w-56 rounded-full border border-[#D8B04A]/20" />
-            <span className="absolute left-[-1.5rem] top-1/2 h-px w-6 -translate-y-1/2 bg-[#D4B03A]/60" />
-            <span className="absolute right-[-1.5rem] top-1/2 h-px w-6 -translate-y-1/2 bg-[#D4B03A]/60" />
+            <span className="absolute -left-6 top-1/2 h-px w-6 -translate-y-1/2 bg-[#D4B03A]/60" />
+            <span className="absolute -right-6 top-1/2 h-px w-6 -translate-y-1/2 bg-[#D4B03A]/60" />
 
             <div className="flex flex-col items-center">
               <span

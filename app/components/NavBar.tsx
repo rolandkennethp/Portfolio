@@ -1,8 +1,6 @@
 "use client";
-import { Volume2 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { use } from "react";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
