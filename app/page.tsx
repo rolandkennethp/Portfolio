@@ -7,6 +7,7 @@ import Navbar from "./components/NavBar";
 import Hero from "./components/Hero";
 import FeaturedStories from "./components/FeaturedStories";
 import Footer from "./components/Footer";
+import AboutIntro from "./(routes)/about/AboutIntro";
 
 export default function Home() {
   
@@ -44,6 +45,7 @@ export default function Home() {
     <main className="min-h-screen w-full bg-black">
       <Navbar />
       <Hero />
+      <AboutIntro/>
       <FeaturedStories />
       <Footer />
 

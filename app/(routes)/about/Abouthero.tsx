@@ -1,8 +1,8 @@
-import { Anton } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 
-const anton = Anton({
-  subsets: ["latin"],
+const bebas = Bebas_Neue({
   weight: "400",
+  subsets: ["latin"],
 });
 
 export default function AboutHero() {
@@ -23,7 +23,7 @@ export default function AboutHero() {
         </p>
 
         <h1
-          className={`${anton.className} mt-4 text-9xl leading-none tracking-wide text-white sm:text-[150px]`}
+          className={`${bebas.className} mt-4 text-9xl leading-none tracking-wide text-white sm:text-[170px]`}
           style={{
             textShadow:
               "0 0 40px rgba(255,255,255,0.15), 2px 2px 0 rgba(0,0,0,0.6)",
@@ -39,7 +39,7 @@ export default function AboutHero() {
         <p className="w-fit shrink-0 text-xs font-medium tracking-[0.2em] text-[#D4B03A] sm:w-56">
           ROLAND KENNETH P
         </p>
-        <p className="max-w-xl text-[18px] font-light leading-relaxed text-white/60">
+        <p className="max-w-xl text-sm md:text-[16px] font-light leading-relaxed text-white/60">
           A full-stack developer driven by curiosity, continuous learning, and building products that solve meaningful problems.
         </p>
       </div>

@@ -1,7 +1,7 @@
-import { Anton } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import { ArrowUpRight, Download, ChevronDown } from "lucide-react";
 
-const anton = Anton({
+const bebas = Bebas_Neue({
   subsets: ["latin"],
   weight: "400",
 });
@@ -18,7 +18,7 @@ export default function Hero() {
           </p>
 
           <h1
-            className={`${anton.className} mt-4 text-6xl leading-[0.95] tracking-wide text-white sm:text-7xl lg:text-8xl`}
+            className={`${bebas.className} mt-4 text-6xl leading-[0.95] tracking-wide text-white sm:text-7xl lg:text-8xl`}
           >
             BUILDING
             <br />
@@ -27,7 +27,7 @@ export default function Hero() {
             SCENE.
           </h1>
 
-          <p className="mt-8 max-w-md text-base leading-relaxed text-white/60">
+          <p className="mt-8 max-w-md text-base leading-relaxed text-white/75">
             I build modern, scalable web applications for teams who care
             about the details—from durable systems beneath the surface to
             focused, accessible interfaces in front.
@@ -36,7 +36,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href="/projects"
-              className="flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-[13px] font-light tracking-wide text-black hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20"
+              className="flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-[13px] tracking-wide text-black hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20"
             >
               EXPLORE PROJECTS
               <ArrowUpRight size={16} />
@@ -64,7 +64,7 @@ export default function Hero() {
 
             <div className="flex flex-col items-center">
               <span
-                className={`${anton.className} text-6xl tracking-wide text-[#D8B04A]`}
+                className={`${bebas.className} text-6xl tracking-wide text-[#D8B04A]`}
               >
                 RK
               </span>

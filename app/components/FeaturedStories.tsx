@@ -1,10 +1,10 @@
-import { Anton } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-const anton = Anton({
-  subsets: ["latin"],
+const bebas = Bebas_Neue({
   weight: "400",
+  subsets: ["latin"],
 });
 
 interface Project {
@@ -46,14 +46,14 @@ const PROJECTS: Project[] = [
 
 export default function FeaturedStories() {
   return (
-    <section className="w-full  bg-black px-8 py-20 lg:px-16">
+    <section className="w-full  bg-[#0e0d09] px-8 py-20 border-t border-white/15 lg:px-51">
       <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
         <div>
-          <p className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]">
+          <p className="text-xs font-semibold tracking-[0.25em] text-[#D4B03A]">
             SELECTED WORK
           </p>
           <h2
-            className={`${anton.className} mt-4 text-5xl leading-[0.95] tracking-wide text-white sm:text-6xl`}
+            className={`${bebas.className} mt-4 text-5xl leading-[1.05] tracking-wide text-white sm:text-6xl`}
           >
             FEATURED
             <br />
@@ -75,7 +75,7 @@ export default function FeaturedStories() {
             <Link key={project.title} href={project.href}>  
           <div
             key={project.title}
-            className="flex flex-col border border-white/10 bg-white/7 p-6 transition-colors hover:border-[#ffffff]/25"
+            className="flex flex-col border border-white/15 rounded bg-black p-6 transition-colors hover:border-[#ffffff]/25"
           >
             <div className="flex items-center mb-7 justify-between text-[11px] tracking-[0.15em] text-white/40">
               <span>{project.year}</span>
@@ -98,7 +98,7 @@ export default function FeaturedStories() {
               A ROLAND KENNETH PROJECT
             </p>
             <h3
-              className={`${anton.className} mt-2 mb-3 text-4xl tracking-wide text-white`}
+              className={`${bebas.className} mt-2 mb-3 text-4xl tracking-wide text-white`}
             >
               {project.title}
             </h3>
