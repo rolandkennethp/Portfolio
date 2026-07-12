@@ -2,6 +2,7 @@ import { Bebas_Neue } from "next/font/google";
 import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import ProjectCard from "./ProjectCard";
 const bebas = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
@@ -26,7 +27,7 @@ const PROJECTS: Project[] = [
     href: "/projects/chattime",
   },
   {
-    year: "2024",
+    year: "2026",
     category: "B2B ADMIN DASHBOARD",
     title: "FARM2STORE",
     description: "Every visit, accounted for.",
@@ -34,7 +35,7 @@ const PROJECTS: Project[] = [
     href: "/projects/adminpanel",
   },
   {
-    year: "2024",
+    year: "2025",
     category: "E-COMMERCE PLATFORM",
     title: "BIKE STORE",
     description: "Clarity for every moving part.",
@@ -72,41 +73,7 @@ export default function FeaturedStories() {
 
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {PROJECTS.map((project) => (
-            <Link key={project.title} href={project.href}>  
-          <div
-            key={project.title}
-            className="flex flex-col border border-white/15 rounded bg-black p-6 transition-colors hover:border-[#ffffff]/25"
-          >
-            <div className="flex items-center mb-7 justify-between text-[11px] tracking-[0.15em] text-white/40">
-              <span>{project.year}</span>
-              <span>{project.category}</span>
-            </div>
-
-            <div>
-                <Image
-                    src={project.src}
-                    alt={project.title}
-                    width={500}
-                    height={100}
-                    className="object-fill rounded-lg"
-                />
-            </div>
-
-            <span className=" my-10 h-px w-8 bg-[#D4B03A]" />
-
-            <p className="text-[11px] mb-3 tracking-[0.15em] text-[#D4B03A]">
-              A ROLAND KENNETH PROJECT
-            </p>
-            <h3
-              className={`${bebas.className} mt-2 mb-3 text-4xl tracking-wide text-white`}
-            >
-              {project.title}
-            </h3>
-            <p className="mt-2 text-sm text-white/50">
-              {project.description}
-            </p>
-          </div>
-        </Link>
+          <ProjectCard key={project.title} project={project} />
         ))}
       </div>
     </section>
