@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import FeaturedStories from "./components/FeaturedStories";
 import Footer from "./components/Footer";
 import AboutIntro from "./(routes)/about/AboutIntro";
+import InfoCards from "./components/InfoCards";
 
 export default function Home() {
   
@@ -46,6 +47,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <AboutIntro/>
+      <InfoCards/>
       <FeaturedStories />
       <Footer />
 

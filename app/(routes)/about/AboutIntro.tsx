@@ -26,7 +26,7 @@ export default function AboutIntro() {
         {/* Right column */}
         <div className="max-w-2xl space-y-5 md:space-y-9">
           <p className="text-lg leading-7 tracking-wide text-white/90">
-            I&apos;m Roland Kenneth, a full-stack developer who builds
+            I&apos;m <span className="text-[#D4B03A]">Roland Kenneth P</span>, a full-stack developer who builds
             considered digital products for teams with ambitious problems
             and very little time to waste.
           </p>

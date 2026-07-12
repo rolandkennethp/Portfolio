@@ -1,8 +1,8 @@
-import { Anton } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 
-const anton = Anton({
-  subsets: ["latin"],
+const bebas = Bebas_Neue({
   weight: "400",
+  subsets: ["latin"],
 });
 
 export default function ResumeHero() {
@@ -23,7 +23,7 @@ export default function ResumeHero() {
         </p>
 
         <h1
-          className={`${anton.className} mt-4 text-9xl leading-none tracking-wide text-white sm:text-[170px]`}
+          className={`${bebas.className} mt-4 text-9xl leading-none tracking-wide text-white sm:text-[170px]`}
           style={{
             textShadow:
               "0 0 40px rgba(255,255,255,0.15), 2px 2px 0 rgba(0,0,0,0.6)",
