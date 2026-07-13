@@ -1,11 +1,11 @@
 "use client";
 
-import { Anton } from "next/font/google";
 import { motion } from "framer-motion";
+import { Bebas_Neue } from "next/font/google";
 
-const anton = Anton({
-  subsets: ["latin"],
+const bebas = Bebas_Neue({
   weight: "400",
+  subsets: ["latin"],
 });
 
 export default function FilmLoading() {
@@ -51,7 +51,7 @@ export default function FilmLoading() {
 
         {/* Title */}
         <h1
-          className={`${anton.className} text-center text-5xl leading-tight tracking-wide text-[#F5EFE9] sm:text-6xl`}
+          className={`${bebas.className} text-center text-5xl leading-tight tracking-wide text-[#F5EFE9] sm:text-6xl`}
         >
           PLEASE SILENCE
           <br />

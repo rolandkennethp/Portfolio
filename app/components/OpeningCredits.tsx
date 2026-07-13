@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Anton } from "next/font/google";
+import { Bebas_Neue } from "next/font/google";
 import { Grid3x3 } from "lucide-react";
 
 type OpeningCreditsProps = {
@@ -9,9 +9,10 @@ type OpeningCreditsProps = {
   finished: boolean;
 };
 
-const anton = Anton({
-  subsets: ["latin"],
+
+const bebas = Bebas_Neue({
   weight: "400",
+  subsets: ["latin"],
 });
 
 export default function OpeningCredits({
@@ -45,7 +46,7 @@ export default function OpeningCredits({
 
         {/* Title */}
         <h1
-          className={`${anton.className} text-center text-5xl tracking-wider text-white sm:text-6xl`}
+          className={`${bebas.className} text-center text-5xl tracking-wider text-white sm:text-6xl`}
         >
           ROLAND STUDIOS
         </h1>
