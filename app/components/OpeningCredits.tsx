@@ -9,21 +9,16 @@ type OpeningCreditsProps = {
   finished: boolean;
 };
 
-
 const bebas = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
 });
 
-export default function OpeningCredits({
-  visible,
-  finished,
-}: OpeningCreditsProps) {
+export default function OpeningCredits({ visible }: OpeningCreditsProps) {
   return (
-    <motion.div className=" absolute inset-0 z-40 h-screen w-screen overflow-hidden bg-black"
-     
+    <motion.div
+      className=" absolute inset-0 z-40 h-screen w-screen overflow-hidden bg-black"
       initial={{ opacity: 1 }}
-
       animate={
         visible
           ? {
@@ -32,18 +27,13 @@ export default function OpeningCredits({
             }
           : {}
       }
-
       transition={{
         duration: 3,
         times: [0, 0.2, 0.7, 1],
       }}
-      >
-     
-
+    >
       {/* Center content */}
       <div className="flex h-full w-full flex-col items-center justify-center">
-        
-
         {/* Title */}
         <h1
           className={`${bebas.className} text-center text-5xl tracking-wider text-white sm:text-6xl`}
@@ -63,13 +53,11 @@ export default function OpeningCredits({
           </span>
 
           {/* Progress bars */}
-          <div className="flex items-center gap-[3px]">
+          <div className="flex items-center gap-0.75">
             {Array.from({ length: 8 }).map((_, i) => (
               <span
                 key={i}
-                className={`h-3 w-1 ${
-                  i < 7 ? "bg-[#D8B04A]" : "bg-white/20"
-                }`}
+                className={`h-3 w-1 ${i < 7 ? "bg-[#D8B04A]" : "bg-white/20"}`}
               />
             ))}
           </div>

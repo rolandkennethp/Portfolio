@@ -1,7 +1,5 @@
 import { Bebas_Neue } from "next/font/google";
 import { ArrowUpRight } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 const bebas = Bebas_Neue({
   weight: "400",
@@ -42,7 +40,6 @@ const PROJECTS: Project[] = [
     src: "/images/bike-01.png",
     href: "/projects/bikestore",
   },
-  
 ];
 
 export default function FeaturedStories() {

@@ -17,21 +17,21 @@ interface ExperienceItem {
 }
 
 const EXPERIENCE: ExperienceItem[] = [
- {
+  {
     number: "01",
     dateRange: "Jul 2025 — Present",
     role: "FREELANCE FULL STACK DEVELOPER",
     company: "Independent",
-    stack: ["Next.js", "Tailwind CSS", "Node.js", "Prisma", "PostgreSQL", ],
+    stack: ["Next.js", "Tailwind CSS", "Node.js", "Prisma", "PostgreSQL"],
     summary:
-        "Partnered with early-stage startups to design, develop, and deploy modern web applications, delivering end-to-end solutions from concept to production.",
+      "Partnered with early-stage startups to design, develop, and deploy modern web applications, delivering end-to-end solutions from concept to production.",
     bullets: [
-        "Built full-stack web applications and internal tools for startup clients",
-        "Developed responsive frontend interfaces and scalable backend APIs using Next.js and Node.js",
-        "Collaborated directly with founders to transform ideas into production-ready products",
+      "Built full-stack web applications and internal tools for startup clients",
+      "Developed responsive frontend interfaces and scalable backend APIs using Next.js and Node.js",
+      "Collaborated directly with founders to transform ideas into production-ready products",
     ],
     quote:
-        "Working with startups taught me to move quickly, adapt constantly, and focus on building what creates the most value.",
+      "Working with startups taught me to move quickly, adapt constantly, and focus on building what creates the most value.",
   },
   {
     number: "02",
@@ -54,7 +54,7 @@ const EXPERIENCE: ExperienceItem[] = [
     dateRange: "May 2025 — Jul 2025",
     role: "FRONTEND DEVELOPER INTERN",
     company: "Breakthrough F1 LLP",
-    stack: ["Next.js", "Tailwind CSS","Github", "Figma"],
+    stack: ["Next.js", "Tailwind CSS", "Github", "Figma"],
     summary:
       "Converted Figma designs into responsive, dynamic web pages while delivering frontend features for multiple client projects in a fast-paced development environment.",
     bullets: [
@@ -69,11 +69,11 @@ const EXPERIENCE: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section className="w-full bg-black px-8 md:px-10 lg:px-50 py-24 ">
+    <section className="w-full bg-black px-8 md:px-10 lg:px-45 py-20 ">
       <p className="max-w-2xl leading-relaxed text-white/60">
         I&apos;ve worked across product teams, studios, and{" "}
-        <span className="text-white">independent collaborations</span>—
-        always close to the people using the result.
+        <span className="text-white">independent collaborations</span>— always
+        close to the people using the result.
       </p>
 
       <div className="mt-12 space-y-6">

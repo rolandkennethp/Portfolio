@@ -1,15 +1,10 @@
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/NavBar";
-import ProjectsHero from "./Projectshero";
-import Project from "./Project";
 
-export default function ProjectsPage() {
+export default function AvarthaPage() {
   return (
     <main className="min-h-screen w-full bg-black">
       <Navbar />
-      <ProjectsHero />
-      <Project />
-
       <Footer />
     </main>
   );

@@ -1,9 +1,13 @@
+"use client";
+
 import { Bebas_Neue } from "next/font/google";
+import { motion } from "framer-motion";
 
 const bebas = Bebas_Neue({
   weight: "400",
   subsets: ["latin"],
 });
+
 interface InfoCard {
   number: string;
   title: string;
@@ -35,10 +39,15 @@ export default function InfoCards() {
   return (
     <section className="w-full bg-black px-8 py-24 border-t border-white/15 lg:px-51">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {CARDS.map((card) => (
-          <div
+        {CARDS.map((card, index) => (
+          <motion.div
             key={card.number}
-            className="border border-white/15 bg-[#0e0d09] p-8"
+            initial={{ opacity: 0, y: 24 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.5, delay: index * 0.12, ease: "easeOut" }}
+            whileHover={{ y: -6 }}
+            className="border border-white/15 bg-[#0e0d09] p-8 transition-colors hover:border-white/30"
           >
             <span className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
               {card.number}
@@ -53,7 +62,7 @@ export default function InfoCards() {
             <p className="mt-4 text-sm leading-relaxed text-white/50">
               {card.description}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
