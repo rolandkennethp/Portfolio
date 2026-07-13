@@ -5,7 +5,19 @@ const bebas = Bebas_Neue({
   subsets: ["latin"],
 });
 
-export default function ProjectsHero() {
+interface PageHeroProps {
+  act: string;
+  synonym: string;
+  title: string;
+  description: string;
+}
+
+export default function PageHero({
+  act,
+  synonym,
+  title,
+  description,
+}: PageHeroProps) {
   return (
     <section className="relative w-full overflow-hidden border-b border-white/15 bg-[#0d0c07] px-8 pb-0 pt-24 lg:px-16">
       {/* Ambient glow */}
@@ -19,7 +31,7 @@ export default function ProjectsHero() {
 
       <div className="relative mt-30">
         <p className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]">
-          ACT I <span className="mx-2 text-white/30">/</span> DEVELOPMENT FEATURE
+          {act} <span className="mx-2 text-white/30">/</span> {synonym}
         </p>
 
         <h1
@@ -29,23 +41,22 @@ export default function ProjectsHero() {
               "0 0 40px rgba(255,255,255,0.15), 2px 2px 0 rgba(0,0,0,0.6)",
           }}
         >
-          PROJECTS
+          {title}
         </h1>
+
         {/* Divider */}
-      <div className="relative mt-14 border-t-[1.5px] border-white/12" />
+        <div className="relative mt-14 border-t-[1.5px] border-white/12" />
 
-      {/* Bottom row */}
-      <div className="relative flex flex-col gap-3 py-8 sm:flex-row sm:gap-24">
-        <p className="w-fit shrink-0 text-xs font-medium tracking-[0.2em] text-[#D4B03A] sm:w-56">
-          ROLAND KENNETH P
-        </p>
-        <p className="max-w-xl text-sm md:text-[16px] font-light leading-relaxed text-white/60">
-          A collection of products that showcase problem-solving, technical growth, and a passion for building modern web applications.
-        </p>
+        {/* Bottom row */}
+        <div className="relative flex flex-col gap-3 py-8 sm:flex-row sm:gap-24">
+          <p className="w-fit shrink-0 text-xs font-medium tracking-[0.2em] text-[#D4B03A] sm:w-56">
+            SYNOPSIS
+          </p>
+          <p className="max-w-xl text-sm md:text-[16px] font-light leading-relaxed text-white/60">
+            {description}
+          </p>
+        </div>
       </div>
-      </div>
-
-      
     </section>
   );
 }

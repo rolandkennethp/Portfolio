@@ -37,7 +37,7 @@ const PROJECTS: Project[] = [
   },
   {
     year: "2026",
-    category: "Portfolio Website",
+    category: "PORTFOLIO WEBSITE",
     title: "AVARTHA",
     description: "Every visit, accounted for.",
     src: "/images/avartha-01.png",

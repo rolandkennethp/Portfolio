@@ -40,11 +40,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   // Smooth, spring-eased tilt derived from pointer position
   const rotateX = useSpring(
     useTransform(pointerY, [-0.5, 0.5], [TILT_RANGE, -TILT_RANGE]),
-    SPRING_CONFIG
+    SPRING_CONFIG,
   );
   const rotateY = useSpring(
     useTransform(pointerX, [-0.5, 0.5], [-TILT_RANGE, TILT_RANGE]),
-    SPRING_CONFIG
+    SPRING_CONFIG,
   );
 
   // Scale target changes with hover/press state; useSpring animates to it
@@ -86,15 +86,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       >
         <div className="flex items-center mb-7 justify-between text-[11px] tracking-[0.15em] text-white/40">
           <span>{project.year}</span>
-          <span>{project.category}</span>
         </div>
 
-         <div
-            className="mt-4 z-30 border bottom-10 right-10 border-white/30 p-3 rounded bg-black absolute inline-flex tracking-widest items-center gap-1 text-sm text-white opacity-0  group-hover:opacity-100 transition-all"
-          >
-            
-            <ArrowUpRight size={20} />
-          </div>
+        <div className="mt-4 z-30 border bottom-10 right-10 border-white/30 p-3 rounded bg-black absolute inline-flex tracking-widest items-center gap-1 text-sm text-white opacity-0  group-hover:opacity-100 transition-all">
+          <ArrowUpRight size={20} />
+        </div>
         <div>
           <Image
             src={project.src}
@@ -107,8 +103,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
         <span className="my-10 h-px w-8 bg-[#D4B03A]" />
 
-        <p className="text-[11px] mb-3 tracking-[0.15em] text-[#D4B03A]">
-          A ROLAND KENNETH PROJECT
+        <p className="text-[11px] mb-0 tracking-[0.15em] text-[#D4B03A]">
+          {project.category}
         </p>
         <h3
           className={`${bebas.className} mt-2 mb-3 text-4xl tracking-wide text-white`}
