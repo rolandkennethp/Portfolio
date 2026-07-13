@@ -19,7 +19,7 @@ export default function ResumeHero() {
 
       <div className="relative mt-30">
         <p className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]">
-          ACT V <span className="mx-2 text-white/30">/</span> DIRECTOR&apos;S CUT
+          ACT IV <span className="mx-2 text-white/30">/</span> DIRECTOR&apos;S CUT
         </p>
 
         <h1

@@ -19,7 +19,7 @@ export default function ExperienceHero() {
 
       <div className="relative mt-30">
         <p className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]">
-          ACT III <span className="mx-2 text-white/30">/</span> THE JOURNEY
+          ACT II <span className="mx-2 text-white/30">/</span> THE JOURNEY
         </p>
 
         <h1
