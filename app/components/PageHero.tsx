@@ -22,15 +22,28 @@ export default function PageHero({
   description,
 }: PageHeroProps) {
   return (
-    <section className="relative w-full overflow-hidden border-b border-white/15 bg-[#0d0c07] px-8 pb-0 pt-52 lg:px-26">
+    <section className="relative w-full overflow-hidden border-b border-white/15 bg-[#000000] px-8 pb-0 pt-52 lg:px-26">
       {/* Ambient glow */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(600px 500px at 52% 10%, rgba(212,176,58,.50), transparent 65%)",
+            "radial-gradient(600px 500px at 52% 10%, rgba(212,176,58,.20), transparent 55%)",
         }}
       />
+
+      {/* Grain / TV static texture */}
+      <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.16]">
+        <filter id="page-hero-noise">
+          <feTurbulence
+            type="fractalNoise"
+            baseFrequency="0.85"
+            numOctaves="3"
+            stitchTiles="stitch"
+          />
+        </filter>
+        <rect width="100%" height="100%" filter="url(#page-hero-noise)" />
+      </svg>
 
       <div className="relative mt-30">
         <motion.p
