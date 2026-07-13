@@ -1,4 +1,7 @@
+"use client";
+
 import { Bebas_Neue } from "next/font/google";
+import { motion } from "framer-motion";
 
 const bebasNeue = Bebas_Neue({
   subsets: ["latin"],
@@ -69,17 +72,31 @@ const EXPERIENCE: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section className="w-full bg-black px-8 md:px-10 lg:px-45 py-20 ">
-      <p className="max-w-2xl leading-relaxed text-white/60">
+    <section className="w-full overflow-hidden bg-black px-8 md:px-10 lg:px-45 py-20 ">
+      <motion.p
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="max-w-2xl leading-relaxed text-white/60"
+      >
         I&apos;ve worked across product teams, studios, and{" "}
         <span className="text-white">independent collaborations</span>— always
         close to the people using the result.
-      </p>
+      </motion.p>
 
       <div className="mt-12 space-y-6">
-        {EXPERIENCE.map((item) => (
-          <div
+        {EXPERIENCE.map((item, index) => (
+          <motion.div
             key={item.number}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -120 : 120 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
             className="grid grid-cols-1 gap-6 border border-white/10 bg-[#0d0c07] p-8 lg:grid-cols-[150px_350px_1fr] lg:gap-10"
           >
             {/* Number + date */}
@@ -129,7 +146,7 @@ export default function Experience() {
                 {item.quote}
               </blockquote>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
