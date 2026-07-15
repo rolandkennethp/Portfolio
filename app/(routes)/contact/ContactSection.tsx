@@ -139,7 +139,7 @@ export default function ContactSection() {
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 space-y-4">
             <a
               href="mailto:rolndknnth@gmail.com"
-              aria-label="Send an email to Roland Kenneth"
+              aria-label="Send an email to Roland Kenneth P"
               className="flex w-fit items-center gap-3 text-sm text-white/70 transition-colors hover:text-white"
             >
               <Mail size={16} />

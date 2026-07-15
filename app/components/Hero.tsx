@@ -21,7 +21,7 @@ export default function Hero() {
             transition={{ duration: 0.5, ease: "easeOut" }}
             className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]"
           >
-            ROLAND KENNETH <span className="text-white/30">/</span> FULL STACK
+            ROLAND KENNETH P<span className="text-white/30">/</span> FULL STACK
             DEVELOPER
           </motion.p>
 
