@@ -1,6 +1,7 @@
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/NavBar";
 import ProjectHero from "@/app/components/ProjectHero";
+import UnderDevelopment from "@/app/components/UnderDevelopment";
 
 export default function BikeStorePage() {
   return (
@@ -13,6 +14,7 @@ export default function BikeStorePage() {
         tagline="Every ride begins with the right bike."
         description="A full-stack eCommerce application that enables users to explore motorcycles, read reviews, manage their cart, and complete purchases with ease."
       />
+      <UnderDevelopment />
       <Footer />
     </main>
   );
