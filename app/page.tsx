@@ -11,21 +11,20 @@ import AboutIntro from "./(routes)/about/AboutIntro";
 import InfoCards from "./components/InfoCards";
 
 export default function Home() {
-  
   const [filmFinished, setFilmFinished] = useState(false);
   const [creditsFinished, setCreditsFinished] = useState(false);
 
   useEffect(() => {
-  if (!creditsFinished) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
+    if (!creditsFinished) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
-  return () => {
-    document.body.style.overflow = "auto";
-  };
-}, [creditsFinished]);
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [creditsFinished]);
 
   useEffect(() => {
     const timer1 = setTimeout(() => {
@@ -46,21 +45,16 @@ export default function Home() {
     <main className="min-h-screen w-full bg-black">
       <Navbar />
       <Hero />
-      <AboutIntro/>
-      <InfoCards/>
+      <AboutIntro />
+      <InfoCards />
       <FeaturedStories />
       <Footer />
 
       {!creditsFinished && (
-        <OpeningCredits
-          visible={filmFinished}
-          finished={creditsFinished}
-        />
+        <OpeningCredits visible={filmFinished} finished={creditsFinished} />
       )}
 
-      {!filmFinished && (
-        <FilmLoading />
-      )}
+      {!filmFinished && <FilmLoading />}
     </main>
   );
 }

@@ -1,4 +1,7 @@
+"use client";
+
 import { Bebas_Neue } from "next/font/google";
+import { motion } from "framer-motion";
 
 const bebas = Bebas_Neue({
   weight: "400",
@@ -10,7 +13,12 @@ export default function AboutIntro() {
     <section className="w-full bg-[#0e0d09] px-8 py-20 flex items-center justify-center">
       <div className="grid grid-cols-1 gap-10 h-fit lg:grid-cols-[380px_1fr] w-fit lg:gap-16">
         {/* Left column */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <p className="text-xs font-semibold tracking-[0.25em] text-[#D4B03A]">
             THE INTRODUCTION
           </p>
@@ -21,10 +29,16 @@ export default function AboutIntro() {
             <br />
             CONVICTION.
           </h2>
-        </div>
+        </motion.div>
 
         {/* Right column */}
-        <div className="max-w-2xl space-y-5 md:space-y-9">
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.4 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+          className="max-w-2xl space-y-5 md:space-y-9"
+        >
           <p className="text-lg leading-7 tracking-wide text-white/90">
             I&apos;m <span className="text-[#D4B03A]">Roland Kenneth P</span>, a
             full-stack developer who builds considered digital products for
@@ -44,7 +58,7 @@ export default function AboutIntro() {
             data model meets a human decision, and where a detail becomes the
             reason someone trusts a tool.
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

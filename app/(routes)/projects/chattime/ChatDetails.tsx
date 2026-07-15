@@ -1,8 +1,17 @@
+"use client";
+
+import { motion } from "framer-motion";
+
 export default function ChatDetails() {
   return (
     <section className="w-full bg-black px-8 lg:px-16">
       {/* Overview */}
-      <div>
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+      >
         <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
           OVERVIEW
         </p>
@@ -11,7 +20,7 @@ export default function ChatDetails() {
           connect, exchange instant messages, manage friendships, and
           personalize their profiles through a fast, responsive interface.
         </p>
-      </div>
+      </motion.div>
 
       {/* Divider */}
       <div className="mt-13 grid grid-cols-1">
@@ -20,7 +29,12 @@ export default function ChatDetails() {
 
       {/* Problem statement + Solution */}
       <div className="mt-13 grid grid-cols-1 gap-10 lg:grid-cols-2">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
             PROBLEM STATEMENT
           </p>
@@ -30,9 +44,14 @@ export default function ChatDetails() {
             notifications, and secure authentication working together
             seamlessly.
           </p>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
             SOLUTION
           </p>
@@ -42,7 +61,7 @@ export default function ChatDetails() {
             notifications, and secure authentication in a responsive user
             experience.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       {/* Divider */}
@@ -53,7 +72,12 @@ export default function ChatDetails() {
 
       {/* Features + Tech stack */}
       <div className="mt-13 grid grid-cols-1 gap-10 lg:grid-cols-2">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
             FEATURES
           </p>
@@ -75,9 +99,14 @@ export default function ChatDetails() {
               </li>
             ))}
           </ul>
-        </div>
+        </motion.div>
 
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+        >
           <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
             TECH STACK
           </p>
@@ -103,14 +132,20 @@ export default function ChatDetails() {
               </span>
             ))}
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Divider */}
       <div className="mt-13 border-t border-white/10" />
 
       {/* Architecture */}
-      <div className="mt-13">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="mt-13"
+      >
         <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
           ARCHITECTURE
         </p>
@@ -119,7 +154,7 @@ export default function ChatDetails() {
           reporting layer builds cached aggregate views for high-density
           planning screens while keeping transactional data normalized.
         </p>
-      </div>
+      </motion.div>
     </section>
   );
 }

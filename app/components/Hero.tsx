@@ -1,4 +1,7 @@
+"use client";
+
 import { Bebas_Neue } from "next/font/google";
+import { motion } from "framer-motion";
 import { ArrowUpRight, Download } from "lucide-react";
 
 const bebas = Bebas_Neue({
@@ -12,12 +15,20 @@ export default function Hero() {
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-8">
         {/* Left column */}
         <div>
-          <p className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]">
-            ROLAND KENNETH <span className="text-white/30">/</span> FULL
-            STACK DEVELOPER
-          </p>
+          <motion.p
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+            className="text-xs font-medium tracking-[0.25em] text-[#D4B03A]"
+          >
+            ROLAND KENNETH <span className="text-white/30">/</span> FULL STACK
+            DEVELOPER
+          </motion.p>
 
-          <h1
+          <motion.h1
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             className={`${bebas.className} mt-4 text-6xl leading-[0.95] tracking-wide text-white sm:text-7xl lg:text-8xl`}
           >
             BUILDING
@@ -25,15 +36,25 @@ export default function Hero() {
             <span className="text-[#e7bb2b]">THE NEXT</span>
             <br />
             SCENE.
-          </h1>
+          </motion.h1>
 
-          <p className="mt-8 max-w-md text-base leading-relaxed text-white/75">
-            I build modern, scalable web applications for teams who care
-            about the details—from durable systems beneath the surface to
-            focused, accessible interfaces in front.
-          </p>
+          <motion.p
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
+            className="mt-8 max-w-md text-base leading-relaxed text-white/75"
+          >
+            I build modern, scalable web applications for teams who care about
+            the details—from durable systems beneath the surface to focused,
+            accessible interfaces in front.
+          </motion.p>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.35, ease: "easeOut" }}
+            className="mt-10 flex flex-wrap items-center gap-4"
+          >
             <a
               href="/projects"
               className="flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-[13px] tracking-wide text-black hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20"
@@ -49,11 +70,16 @@ export default function Hero() {
               <Download size={16} />
               RESUME
             </a>
-          </div>
+          </motion.div>
         </div>
 
         {/* Right column - badge card */}
-        <div className="relative flex items-center justify-center border border-white/10 px-8 py-16">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          className="relative flex items-center justify-center border border-white/10 px-8 py-16"
+        >
           <span className="absolute left-0 top-0 h-px w-8 -translate-y-1/2 translate-x-4 bg-white/40" />
           <span className="absolute bottom-0 right-8 h-px w-8 translate-y-1/2 bg-white/40" />
 
@@ -78,10 +104,8 @@ export default function Hero() {
             <span>2026 &nbsp;•&nbsp; Bangalore, India</span>
             <span className="h-px w-8 bg-white/30" />
           </div>
-        </div>
+        </motion.div>
       </div>
-
-      
     </section>
   );
 }

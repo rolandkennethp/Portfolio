@@ -1,4 +1,7 @@
+"use client";
+
 import { Bebas_Neue } from "next/font/google";
+import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import ProjectCard from "./ProjectCard";
 const bebas = Bebas_Neue({
@@ -45,7 +48,13 @@ const PROJECTS: Project[] = [
 export default function FeaturedStories() {
   return (
     <section className="w-full  bg-[#0e0d09] px-8 py-20 border-t border-white/15 lg:px-51">
-      <div className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end"
+      >
         <div>
           <p className="text-xs font-semibold tracking-[0.25em] text-[#D4B03A]">
             SELECTED WORK
@@ -66,11 +75,19 @@ export default function FeaturedStories() {
           View all case studies
           <ArrowUpRight size={16} />
         </a>
-      </div>
+      </motion.div>
 
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {PROJECTS.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+        {PROJECTS.map((project, index) => (
+          <motion.div
+            key={project.title}
+            initial={{ opacity: 0, y: 32 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+          >
+            <ProjectCard project={project} />
+          </motion.div>
         ))}
       </div>
     </section>

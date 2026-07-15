@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Bebas_Neue } from "next/font/google";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { X } from "lucide-react";
 
@@ -26,7 +27,7 @@ const SCREENSHOTS: Screenshot[] = [
     title: "A portfolio in focus",
     description:
       "Capacity and delivery signals read in one clear planning view.",
-    src: "/images/chat-01.png",
+    src: "/images/chat-012.png",
     secondarySrc: "/images/chat-01.png",
   },
   {
@@ -34,7 +35,7 @@ const SCREENSHOTS: Screenshot[] = [
     category: "TEAM",
     title: "Workload without the noise",
     description: "A grounded view of people, priorities, and availability.",
-    src: "/images/chat-01.png",
+    src: "/images/chat-03.png",
   },
   {
     number: "03",
@@ -42,7 +43,7 @@ const SCREENSHOTS: Screenshot[] = [
     title: "The week, summarized",
     description:
       "Client-ready progress made legible without spreadsheet friction.",
-    src: "/images/chat-01.png",
+    src: "/images/chat-04.png",
   },
 ];
 
@@ -87,7 +88,13 @@ export default function Screenshots() {
 
   return (
     <section className="w-full bg-black px-8 mt-13 lg:px-16">
-      <div className="flex flex-col justify-between gap-6 border-t border-white/10 pt-13 sm:flex-row sm:items-end">
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="flex flex-col justify-between gap-6 border-t border-white/10 pt-13 sm:flex-row sm:items-end"
+      >
         <div>
           <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
             SCREENSHOTS
@@ -103,11 +110,17 @@ export default function Screenshots() {
           Key product moments, captured from the workflows that shaped the
           experience.
         </p>
-      </div>
+      </motion.div>
 
       <div className="mt-5 grid grid-cols-1 gap-6 justify-center items-center lg:grid-cols-[1fr_480px]">
         {/* Large left card */}
-        <div className="flex flex-col border-white">
+        <motion.div
+          initial={{ opacity: 0, y: 32 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          className="flex flex-col border-white"
+        >
           <ScreenshotImage
             src={first.src}
             alt={first.title}
@@ -133,12 +146,23 @@ export default function Screenshots() {
               />
             </div>
           )}
-        </div>
+        </motion.div>
 
         {/* Right column - two stacked cards */}
         <div className="flex flex-col gap-6">
-          {[second, third].map((shot) => (
-            <div key={shot.number} className="border border-white/10">
+          {[second, third].map((shot, index) => (
+            <motion.div
+              key={shot.number}
+              initial={{ opacity: 0, y: 32 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+                ease: "easeOut",
+              }}
+              className="border border-white/10"
+            >
               <ScreenshotImage
                 src={shot.src}
                 alt={shot.title}
@@ -154,7 +178,7 @@ export default function Screenshots() {
                 </h3>
                 <p className="mt-2 text-sm text-white/50">{shot.description}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

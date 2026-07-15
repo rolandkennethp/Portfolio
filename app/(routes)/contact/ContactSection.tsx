@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Bebas_Neue } from "next/font/google";
+import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Mail, MapPin, ArrowUpRight, Loader2, Check } from "lucide-react";
 
@@ -54,10 +55,10 @@ function WhatsappIcon({ size = 16 }: { size?: number }) {
 }
 
 // EmailJS config — from your EmailJS dashboard (Account > API Keys, Email Services, Email Templates)
-const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
-const EMAILJS_NOTIFY_TEMPLATE_ID = "YOUR_NOTIFY_TEMPLATE_ID"; // sends the message to you
-const EMAILJS_AUTOREPLY_TEMPLATE_ID = "YOUR_AUTOREPLY_TEMPLATE_ID"; // sends thank-you to sender
-const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+const EMAILJS_SERVICE_ID = "service_81zjvxa";
+const EMAILJS_NOTIFY_TEMPLATE_ID = "template_v5q2osk"; // sends the message to you
+const EMAILJS_AUTOREPLY_TEMPLATE_ID = "template_b3l9nop"; // sends thank-you to sender
+const EMAILJS_PUBLIC_KEY = "HELXuJAghBsAi30EB";
 
 type FormStatus = "idle" | "sending" | "sent" | "error";
 
@@ -112,7 +113,12 @@ export default function ContactSection() {
     <section className="w-full bg-black px-8 py-24 lg:px-16">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
         {/* Left column */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+        >
           <p className="text-xs font-semibold tracking-[0.25em] text-[#D4B03A]">
             LET&apos;S WORK TOGETHER
           </p>
@@ -132,11 +138,12 @@ export default function ContactSection() {
 
           <div className="mt-10 grid grid-cols-1 md:grid-cols-2 space-y-4">
             <a
-              href="rolndknnth@gmail.com"
-              className="flex items-center w-fit gap-3 text-sm text-white/70 transition-colors hover:text-white"
+              href="mailto:rolndknnth@gmail.com"
+              aria-label="Send an email to Roland Kenneth"
+              className="flex w-fit items-center gap-3 text-sm text-white/70 transition-colors hover:text-white"
             >
               <Mail size={16} />
-              rolndknnth@gmail.com
+              <span>rolndknnth@gmail.com</span>
             </a>
             <a
               href="https://wa.me/7204630300"
@@ -171,11 +178,15 @@ export default function ContactSection() {
               Bangalore, India
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right column - form */}
-        <form
+        <motion.form
           onSubmit={handleSubmit}
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
           className="border border-white/10 bg-[#0d0c07] p-8"
         >
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
@@ -251,7 +262,7 @@ export default function ContactSection() {
               Something went wrong. Please try again or email me directly.
             </p>
           )}
-        </form>
+        </motion.form>
       </div>
     </section>
   );
