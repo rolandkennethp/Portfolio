@@ -2,6 +2,8 @@
 
 A modern portfolio website showcasing my work as a **Full Stack Developer**. Built with Next.js, TypeScript, and Tailwind CSS, the portfolio highlights my projects, technical skills, experience, and provides an easy way to get in touch.
 
+> **Status:** Work in Progress
+
 ## Live Demo
 
 **Website:** [View Website](https://rolandkenneth.vercel.app/)
