@@ -5,7 +5,7 @@ import ContactSection from "./ContactSection";
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen w-full bg-black">
+    <main className="min-h-screen w-full bg-[#0a0a0a]">
       <Navbar />
       <PageHero
         act="FINAL ACT"

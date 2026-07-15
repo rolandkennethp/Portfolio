@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ChatDetails() {
   return (
-    <section className="w-full bg-black px-8 lg:px-16">
+    <section className="w-full bg-[#0a0a0a] px-8 lg:px-16">
       {/* Overview */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}

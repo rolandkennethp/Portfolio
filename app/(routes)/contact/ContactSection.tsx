@@ -110,7 +110,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full bg-black px-8 py-24 lg:px-16">
+    <section className="w-full bg-[#0a0a0a] px-8 py-24 lg:px-16">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
         {/* Left column */}
         <motion.div
@@ -235,7 +235,7 @@ export default function ContactSection() {
           <button
             type="submit"
             disabled={status === "sending" || status === "sent"}
-            className="mt-6 flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-[#e9c25c] disabled:cursor-not-allowed disabled:opacity-80"
+            className="mt-6 flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-sm font-semibold tracking-wide text-[#0a0a0a] transition-colors hover:bg-[#e9c25c] disabled:cursor-not-allowed disabled:opacity-80"
           >
             {status === "sending" && (
               <>

@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
 
 export default function Project() {
   return (
-    <section className="w-full bg-black px-8 md:px-10 lg:px-45 py-20 ">
+    <section className="w-full bg-[#0a0a0a] px-8 md:px-10 lg:px-45 py-20 ">
       <motion.p
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}

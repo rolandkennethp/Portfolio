@@ -87,7 +87,7 @@ export default function Screenshots() {
   }, [expandedSrc]);
 
   return (
-    <section className="w-full bg-black px-8 mt-13 lg:px-16">
+    <section className="w-full bg-[#0a0a0a] px-8 mt-13 lg:px-16">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -186,7 +186,7 @@ export default function Screenshots() {
       {/* Lightbox */}
       {expandedSrc && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-6"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#0a0a0a]/90 p-6"
           onClick={() => setExpandedSrc(null)}
         >
           <button

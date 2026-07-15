@@ -72,7 +72,7 @@ const EXPERIENCE: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section className="w-full overflow-hidden bg-black px-8 md:px-10 lg:px-45 py-20 ">
+    <section className="w-full overflow-hidden bg-[#0a0a0a] px-8 md:px-10 lg:px-45 py-20 ">
       <motion.p
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

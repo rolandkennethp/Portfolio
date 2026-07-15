@@ -57,7 +57,7 @@ export default function Hero() {
           >
             <a
               href="/projects"
-              className="flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-[13px] tracking-wide text-black hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20"
+              className="flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-[13px] tracking-wide text-[#0a0a0a] hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20"
             >
               EXPLORE PROJECTS
               <ArrowUpRight size={16} />

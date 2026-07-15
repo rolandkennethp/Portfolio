@@ -26,7 +26,7 @@ export default function ProjectHero({
   description,
 }: ProjectHeroProps) {
   return (
-    <section className="relative w-full overflow-hidden border-b border-white/15 lg:pr-70 bg-black px-8 py-24 lg:px-36">
+    <section className="relative w-full overflow-hidden border-b border-white/15 lg:pr-70 bg-[#0a0a0a] px-8 py-24 lg:px-36">
       {/* Grain / TV static texture */}
       <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.18]">
         <filter id="project-hero-noise">

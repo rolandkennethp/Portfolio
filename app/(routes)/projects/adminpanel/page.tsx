@@ -1,10 +1,11 @@
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/NavBar";
 import ProjectHero from "@/app/components/ProjectHero";
+import UnderDevelopment from "@/app/components/UnderDevelopment";
 
 export default function AdminPanelPage() {
   return (
-    <main className="min-h-screen w-full bg-black">
+    <main className="min-h-screen w-full bg-[#0a0a0a]">
       <Navbar />
       <ProjectHero
         year="2026"
@@ -13,6 +14,7 @@ export default function AdminPanelPage() {
         tagline="Built to keep businesses moving."
         description="A scalable B2B admin dashboard that streamlines products, orders, analytics, and business operations through a modern and intuitive interface."
       />
+      <UnderDevelopment />
       <Footer />
     </main>
   );

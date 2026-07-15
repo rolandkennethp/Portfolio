@@ -82,13 +82,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         onMouseDown={() => setIsPressed(true)}
         onMouseUp={() => setIsPressed(false)}
         style={{ rotateX, rotateY, scale, transformStyle: "preserve-3d" }}
-        className="flex flex-col group border border-white/15 rounded bg-black p-6 transition-colors hover:border-[#ffffff]/25 will-change-transform"
+        className="flex flex-col group border border-white/15 rounded bg-[#0a0a0a] p-6 transition-colors hover:border-[#ffffff]/25 will-change-transform"
       >
         <div className="flex items-center mb-7 justify-between text-[11px] tracking-[0.15em] text-white/40">
           <span>{project.year}</span>
         </div>
 
-        <div className="mt-4 z-30 border bottom-10 right-10 border-white/30 p-3 rounded bg-black absolute inline-flex tracking-widest items-center gap-1 text-sm text-white opacity-0  group-hover:opacity-100 transition-all">
+        <div className="mt-4 z-30 border bottom-10 right-10 border-white/30 p-3 rounded bg-[#0a0a0a] absolute inline-flex tracking-widest items-center gap-1 text-sm text-white opacity-0  group-hover:opacity-100 transition-all">
           <ArrowUpRight size={20} />
         </div>
         <div>

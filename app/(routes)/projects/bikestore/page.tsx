@@ -5,7 +5,7 @@ import UnderDevelopment from "@/app/components/UnderDevelopment";
 
 export default function BikeStorePage() {
   return (
-    <main className="min-h-screen w-full bg-black">
+    <main className="min-h-screen w-full bg-[#0a0a0a]">
       <Navbar />
       <ProjectHero
         year="2025"

@@ -5,7 +5,7 @@ import PageHero from "@/app/components/PageHero";
 
 export default function ProjectsPage() {
   return (
-    <main className="min-h-screen w-full bg-black">
+    <main className="min-h-screen w-full bg-[#0a0a0a]">
       <Navbar />
       <PageHero
         act="ACT I"

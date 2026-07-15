@@ -6,7 +6,7 @@ import PageHero from "@/app/components/PageHero";
 
 export default function ResumePage() {
   return (
-    <main className="min-h-screen w-full bg-black ">
+    <main className="min-h-screen w-full bg-[#0a0a0a] ">
       <Navbar />
       <PageHero
         act="ACT IV"
@@ -25,7 +25,7 @@ export default function ResumePage() {
         <a
           href="/resume/cv.pdf"
           download
-          className="flex items-center gap-2 tracking-wider px-6 py-3 text-[13px] font-light  text-black bg-[#D4B03A] hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20 hover:border-white/50"
+          className="flex items-center gap-2 tracking-wider px-6 py-3 text-[13px] font-light  text-[#0a0a0a] bg-[#D4B03A] hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20 hover:border-white/50"
         >
           <Download size={16} />
           DOWNLOAD RESUME

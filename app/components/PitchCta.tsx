@@ -33,7 +33,7 @@ export default function PitchCta() {
         <motion.div whileTap={{ scale: 0.96 }}>
           <Link
             href="/contact"
-            className="relative z-10 inline-block bg-[#D4B03A] hover:-translate-y-1 px-10 py-4 text-[10px] md:text-[13px] font-bold tracking-[0.15em] text-black transition-all hover:bg-[#e9c25c]"
+            className="relative z-10 inline-block bg-[#D4B03A] hover:-translate-y-1 px-10 py-4 text-[10px] md:text-[13px] font-bold tracking-[0.15em] text-[#0a0a0a] transition-all hover:bg-[#e9c25c]"
           >
             BUILD A PROJECT
           </Link>

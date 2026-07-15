@@ -10,7 +10,7 @@ const bebas = Bebas_Neue({
 
 export default function AboutIntro() {
   return (
-    <section className="w-full bg-[#0e0d09] px-8 py-20 flex items-center justify-center">
+    <section className="w-full bg-[#0a0a0a] px-8 py-20 flex items-center justify-center">
       <div className="grid grid-cols-1 gap-10 h-fit lg:grid-cols-[380px_1fr] w-fit lg:gap-16">
         {/* Left column */}
         <motion.div

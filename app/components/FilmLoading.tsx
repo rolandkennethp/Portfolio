@@ -10,9 +10,8 @@ const bebas = Bebas_Neue({
 
 export default function FilmLoading() {
   return (
-    <div className="absolute inset-0 z-50 h-screen w-screen overflow-hidden bg-black">
-      
-        {/* Top Curtain */}
+    <div className="absolute inset-0 z-50 h-screen w-screen overflow-hidden bg-[#0a0a0a]">
+      {/* Top Curtain */}
       <motion.div
         className="absolute top-0 left-0 w-full h-1/2 bg-[#2B1416]"
         initial={{ y: 0 }}
@@ -23,7 +22,7 @@ export default function FilmLoading() {
           ease: "easeInOut",
         }}
       />
-         {/* Bottom Curtain */}
+      {/* Bottom Curtain */}
       <motion.div
         className="absolute bottom-0 left-0 w-full h-1/2 bg-[#2B1416]"
         initial={{ y: 0 }}
@@ -36,14 +35,15 @@ export default function FilmLoading() {
       />
 
       {/* Center content */}
-      <motion.div className=" flex h-full absolute inset-0 w-full flex-col items-center justify-center px-4"
-      initial={{ opacity: 1 }}
+      <motion.div
+        className=" flex h-full absolute inset-0 w-full flex-col items-center justify-center px-4"
+        initial={{ opacity: 1 }}
         animate={{ opacity: 0 }}
         transition={{
           delay: 1.3,
           duration: 0.3,
         }}
-        >
+      >
         {/* Eyebrow */}
         <p className="mb-4 text-xs font-medium tracking-[0.3em] text-[#D8B04A] sm:text-sm">
           ROLAND STUDIOS

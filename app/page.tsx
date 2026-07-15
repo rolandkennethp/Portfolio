@@ -60,11 +60,11 @@ export default function Home() {
 
   // Avoid rendering anything until we know whether the intro should play
   if (hasSeenIntro === null) {
-    return <main className="min-h-screen w-full bg-black" />;
+    return <main className="min-h-screen w-full bg-[#0a0a0a]" />;
   }
 
   return (
-    <main className="min-h-screen w-full bg-black">
+    <main className="min-h-screen w-full bg-[#0a0a0a]">
       <Navbar />
       <Hero />
       <AboutIntro />

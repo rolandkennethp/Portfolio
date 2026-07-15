@@ -21,7 +21,7 @@ function GithubIcon({ size = 16 }: { size?: number }) {
 
 export default function ChattimePage() {
   return (
-    <main className="min-h-screen w-full bg-black">
+    <main className="min-h-screen w-full bg-[#0a0a0a]">
       <Navbar />
       <ProjectHero
         year="2025"

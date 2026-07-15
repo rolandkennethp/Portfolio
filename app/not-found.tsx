@@ -9,7 +9,7 @@ const bebas = Bebas_Neue({
 
 export default function NotFound() {
   return (
-    <section className="flex min-h-screen w-full flex-col items-center justify-center bg-black px-8 text-center lg:px-16">
+    <section className="flex min-h-screen w-full flex-col items-center justify-center bg-[#0a0a0a] px-8 text-center lg:px-16">
       <p className="text-xs font-semibold tracking-[0.25em] text-[#D4B03A]">
         404 <span className="mx-2 text-white/30">/</span> ERROR
       </p>
@@ -27,7 +27,7 @@ export default function NotFound() {
 
       <Link
         href="/"
-        className="mt-10 flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-sm font-semibold tracking-wide text-black transition-colors hover:bg-[#e9c25c]"
+        className="mt-10 flex items-center gap-2 bg-[#D4B03A] px-6 py-3 text-sm font-semibold tracking-wide text-[#0a0a0a] transition-colors hover:bg-[#e9c25c]"
       >
         GO TO HOME
         <ArrowUpRight size={16} />

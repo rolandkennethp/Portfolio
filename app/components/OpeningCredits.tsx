@@ -17,7 +17,7 @@ const bebas = Bebas_Neue({
 export default function OpeningCredits({ visible }: OpeningCreditsProps) {
   return (
     <motion.div
-      className=" absolute inset-0 z-40 h-screen w-screen overflow-hidden bg-black"
+      className=" absolute inset-0 z-40 h-screen w-screen overflow-hidden bg-[#0a0a0a]"
       initial={{ opacity: 1 }}
       animate={
         visible
