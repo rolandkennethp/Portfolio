@@ -23,26 +23,26 @@ interface Screenshot {
 const SCREENSHOTS: Screenshot[] = [
   {
     number: "01",
-    category: "PLANNING",
-    title: "A portfolio in focus",
+    category: "SIGN UP",
+    title: "Conversations begin here",
     description:
-      "Capacity and delivery signals read in one clear planning view.",
+      "Create an account and start connecting with friends in seconds.",
     src: "/images/chat-012.png",
     secondarySrc: "/images/chat-01.png",
   },
   {
     number: "02",
-    category: "TEAM",
-    title: "Workload without the noise",
-    description: "A grounded view of people, priorities, and availability.",
+    category: "PROFILE",
+    title: "Your network, all in one place",
+    description: "Manage your profile, discover friends, and grow your circle.",
     src: "/images/chat-03.png",
   },
   {
     number: "03",
-    category: "REPORTS",
-    title: "The week, summarized",
+    category: "NOTIFICATIONS",
+    title: "Never miss a message",
     description:
-      "Client-ready progress made legible without spreadsheet friction.",
+      "Stay updated with friend requests, new messages, and important activity.",
     src: "/images/chat-04.png",
   },
 ];
