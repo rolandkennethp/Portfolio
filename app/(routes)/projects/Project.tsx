@@ -50,7 +50,7 @@ const PROJECTS: Project[] = [
 
 export default function Project() {
   return (
-    <section className="w-full bg-[#0a0a0a] px-8 md:px-10 lg:px-45 py-20 ">
+    <section className="w-full bg-[#0a0a0a] sm:px-8 px-5 md:px-10 lg:px-45 sm:py-20 py-10">
       <motion.p
         initial={{ opacity: 0, y: 12 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ export default function Project() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.6 }}
         transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-        className="max-w-2xl mt-8 leading-relaxed text-white/60"
+        className="max-w-2xl sm:mt-8 mt-5 leading-relaxed text-white/60"
       >
         A collection of products built around real workflows, durable systems,
         and a belief that utility can be beautiful.

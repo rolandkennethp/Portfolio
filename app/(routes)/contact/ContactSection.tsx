@@ -110,8 +110,8 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full bg-[#0a0a0a] px-8 py-24 lg:px-16">
-      <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24">
+    <section className="w-full bg-[#0a0a0a] sm:px-8 sm:py-24 py-10 px-5 lg:px-16">
+      <div className="grid grid-cols-1 sm:gap-16 gap-12 lg:grid-cols-2 lg:gap-24">
         {/* Left column */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -131,12 +131,12 @@ export default function ContactSection() {
             <span className="text-[#D4B03A]">SCENE COUNT.</span>
           </h2>
 
-          <p className="mt-6 max-w-md text-base leading-relaxed text-white/60">
+          <p className="sm:mt-6 mt-4 max-w-md text-base leading-relaxed text-white/60">
             Have a product challenge, an opening on your team, or an idea worth
             shaping? I&apos;d be glad to hear it.
           </p>
 
-          <div className="mt-10 grid grid-cols-1 md:grid-cols-2 space-y-4">
+          <div className="sm:mt-10 mt-7 grid grid-cols-1 md:grid-cols-2 space-y-4">
             <a
               href="mailto:rolndknnth@gmail.com"
               aria-label="Send an email to Roland Kenneth P"

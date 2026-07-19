@@ -72,7 +72,7 @@ const EXPERIENCE: ExperienceItem[] = [
 
 export default function Experience() {
   return (
-    <section className="w-full overflow-hidden bg-[#0a0a0a] px-8 md:px-10 lg:px-45 py-20 ">
+    <section className="w-full overflow-hidden bg-[#0a0a0a] px-5 md:px-10 lg:px-45 sm:py-20 py-10">
       <motion.p
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -126,11 +126,11 @@ export default function Experience() {
 
             {/* Description + bullets + quote */}
             <div>
-              <p className="text-[16px] leading-relaxed text-white/90">
+              <p className="sm:text-[16px] text-[15px] leading-relaxed text-white/90">
                 {item.summary}
               </p>
 
-              <ul className="mt-4 space-y-2">
+              <ul className="mt-4 hidden sm:block space-y-2">
                 {item.bullets.map((bullet) => (
                   <li
                     key={bullet}
@@ -142,7 +142,7 @@ export default function Experience() {
                 ))}
               </ul>
 
-              <blockquote className="mt-6 border-l-2 border-[#D4B03A] pl-4 text-sm  leading-relaxed text-white/90 font-light ">
+              <blockquote className="mt-6 hidden sm:block border-l-2 border-[#D4B03A] pl-4 text-sm  leading-relaxed text-white/90 font-light ">
                 {item.quote}
               </blockquote>
             </div>

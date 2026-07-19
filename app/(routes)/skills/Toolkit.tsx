@@ -55,7 +55,7 @@ const CATEGORIES: SkillCategory[] = [
 
 export default function Toolkit() {
   return (
-    <section className="w-full bg-[#0a0a0a] px-8 py-20 md:px-39">
+    <section className="w-full bg-[#0a0a0a] px-8 sm:py-20 py-10 md:px-39">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 16 }}

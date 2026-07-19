@@ -10,8 +10,8 @@ const bebas = Bebas_Neue({
 
 export default function AboutIntro() {
   return (
-    <section className="w-full bg-[#0a0a0a] px-8 py-20 flex items-center justify-center">
-      <div className="grid grid-cols-1 gap-10 h-fit lg:grid-cols-[380px_1fr] w-fit lg:gap-16">
+    <section className="w-full bg-[#0a0a0a] px-8 sm:py-20 py-10 flex items-center justify-center">
+      <div className="grid grid-cols-1 gap-4 h-fit lg:grid-cols-[380px_1fr] w-fit lg:gap-16">
         {/* Left column */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
@@ -39,20 +39,20 @@ export default function AboutIntro() {
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
           className="max-w-2xl space-y-5 md:space-y-9"
         >
-          <p className="text-lg leading-7 tracking-wide text-white/90">
+          <p className="sm:text-lg leading-7 tracking-wide text-white/90">
             I&apos;m <span className="text-[#D4B03A]">Roland Kenneth P</span>, a
             full-stack developer who builds considered digital products for
             teams with ambitious problems and very little time to waste.
           </p>
 
-          <p className="text-base leading-relaxed text-white/50">
+          <p className="sm:text-base text-sm leading-relaxed text-white/50">
             My path into software began with a fascination for how thoughtful
             tools make difficult work feel inevitable. What started with small
             interfaces became a practice of translating messy operational needs
             into systems that are calm, useful, and built to last.
           </p>
 
-          <p className="text-base leading-relaxed text-white/50">
+          <p className="sm:text-base text-sm leading-relaxed text-white/50">
             I work comfortably across the stack, but I am especially drawn to
             the seams: where product strategy meets interface behavior, where a
             data model meets a human decision, and where a detail becomes the

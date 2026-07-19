@@ -11,7 +11,7 @@ const bebas = Bebas_Neue({
 
 export default function Hero() {
   return (
-    <section className="relative w-full bg-[#000000] border-b-[0.5px] border-white/15 px-8 pb-20 pt-16 lg:px-16">
+    <section className="relative w-full bg-[#000000] border-b-[0.5px] border-white/15 sm:px-8 px-5 pb-20 sm:pt-16 pt-6 lg:px-16">
       <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-8">
         {/* Left column */}
         <div>
@@ -42,7 +42,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.25, ease: "easeOut" }}
-            className="mt-8 max-w-md text-base leading-relaxed text-white/75"
+            className="sm:mt-8 mt-5 max-w-md text-base leading-relaxed text-white/75"
           >
             I build modern, scalable web applications for teams who care about
             the details—from durable systems beneath the surface to focused,
@@ -53,7 +53,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.35, ease: "easeOut" }}
-            className="mt-10 flex flex-wrap items-center gap-4"
+            className="sm:mt-10 mt-6 flex flex-wrap items-center gap-4"
           >
             <a
               href="/projects"

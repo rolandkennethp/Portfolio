@@ -47,7 +47,7 @@ const PROJECTS: Project[] = [
 
 export default function FeaturedStories() {
   return (
-    <section className="w-full  bg-[#0a0a0a] px-8 py-20 border-t border-white/15 lg:px-51">
+    <section className="w-full  bg-[#0a0a0a] px-8 sm:py-20 py-10 border-t border-white/15 lg:px-51">
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}

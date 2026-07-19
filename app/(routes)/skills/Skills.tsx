@@ -59,9 +59,9 @@ export function Skills() {
   const active = disciplines[activeDiscipline];
   return (
     <>
-      <section className="bg-[#0a0a0a] py-16 border-b border-white/12 sm:py-24">
+      <section className="bg-[#0a0a0a] py-10 border-b border-white/12 sm:py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
+          <div className="grid gap-9 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
             <motion.div
               initial={reduceMotion ? false : { opacity: 0, x: -32 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -77,7 +77,7 @@ export function Skills() {
                 <br />
                 BEHIND THE WORK
               </h2>
-              <p className="mt-6  max-w-sm text-sm leading-7 text-[#8f8f8f]">
+              <p className="sm:mt-6 mt-4 max-w-sm text-sm sm:leading-7 leading-6 text-[#8f8f8f]">
                 A useful stack is not a list of badges. It is a set of choices
                 that lets an idea move from an early sketch to a dependable
                 product.
@@ -100,7 +100,7 @@ export function Skills() {
                       type="button"
                       onClick={() => setActiveDiscipline(index)}
                       onMouseEnter={() => setActiveDiscipline(index)}
-                      className={`group ${bebas.className} grid w-full grid-cols-[2.8rem_1fr_auto] items-center gap-3 border-b border-white/12 py-5 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-inset sm:grid-cols-[4rem_1fr_auto] sm:py-7 ${isActive ? "text-[#f5f5f5]" : "text-[#777]"}`}
+                      className={`group ${bebas.className} grid w-full grid-cols-[2.8rem_1fr_auto] items-center ssgap-3 border-b border-white/12 py-5 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d4af37] focus-visible:ring-inset sm:grid-cols-[4rem_1fr_auto] sm:py-7 ${isActive ? "text-[#f5f5f5]" : "text-[#777]"}`}
                       aria-pressed={isActive}
                     >
                       <span
@@ -142,15 +142,15 @@ export function Skills() {
               >
                 <div className="absolute right-0 top-0 h-10 w-10 border-b border-l border-[#d4af37]/35" />
                 <p
-                  className={`${bebas.className} max-w-2xl font-display text-2xl uppercase leading-[0.95] text-[#f5f5f5] sm:text-3xl`}
+                  className={`${bebas.className} max-w-2xl font-display text-2xl uppercase sm:leading-[0.95] leading-[0.97] text-[#f5f5f5] sm:text-3xl`}
                 >
                   {active.statement}
                 </p>
-                <div className="mt-8 grid gap-7 border-t border-white/8 pt-6 sm:grid-cols-[1fr_1fr]">
-                  <p className="text-sm leading-7 text-[#b8b8b8]">
+                <div className="sm:mt-8 mt-4 grid gap-7 border-t border-white/8 sm:pt-6 pt-4 sm:grid-cols-[1fr_1fr]">
+                  <p className="text-sm sm:leading-7 leading-6 text-[#b8b8b8]">
                     {active.detail}
                   </p>
-                  <div className="flex flex-wrap content-start gap-2">
+                  <div className="flex flex-wrap content-start sm:gap-2">
                     {active.skills.map((skill) => (
                       <span
                         key={skill}

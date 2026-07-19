@@ -37,7 +37,7 @@ const CARDS: InfoCard[] = [
 
 export default function InfoCards() {
   return (
-    <section className="w-full bg-[#0a0a0a] px-8 py-24 border-t border-white/15 lg:px-51">
+    <section className="w-full bg-[#0a0a0a] px-8 sm:py-24 py-10 border-t border-white/15 lg:px-51">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {CARDS.map((card, index) => (
           <motion.div

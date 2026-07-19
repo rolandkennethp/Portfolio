@@ -7,7 +7,7 @@ const bebas = Bebas_Neue({
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#0a0a0a] px-8 pb-10 pt-20 border-t border-white/15 lg:px-16">
+    <footer className="w-full bg-[#0a0a0a] px-8 sm:pb-10 pb-6 sm:pt-20 pt-10 border-t border-white/15 lg:px-16">
       <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <div>
           <p className="text-xs font-semibold tracking-[0.25em] text-[#D4B03A]">
@@ -89,7 +89,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mt-20 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
+      <div className="sm:mt-20 mt-10 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/40 sm:flex-row sm:items-center sm:justify-between">
         <span>© 2025 ROLAND KENNETH P</span>
       </div>
     </footer>

@@ -14,18 +14,18 @@ export default function ResumePage() {
         title="RESUME"
         description="A snapshot of my experience, technical skills, education, and the projects that have shaped my journey as a developer."
       />
-      <div className="flex flex-col gap-8 justify-center items-center my-18">
+      <div className="flex flex-col gap-8 justify-center px-5 items-center sm:my-18 my-10">
         <Image
           src="/resume/cv.jpg"
           alt="Profile"
           width={600}
           height={400}
-          className="rounded-lg shadow-lg shadow-[#D4B03A]/20"
+          className="shadow-lg shadow-[#D4B03A]/20"
         />
         <a
           href="/resume/cv.pdf"
           download
-          className="flex items-center gap-2 tracking-wider px-6 py-3 text-[13px] font-light  text-[#0a0a0a] bg-[#D4B03A] hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20 hover:border-white/50"
+          className="flex items-center gap-2 tracking-wider px-6 py-3 text-[13px]  text-[#0a0a0a] bg-[#D4B03A] hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20 hover:border-white/50"
         >
           <Download size={16} />
           DOWNLOAD RESUME
