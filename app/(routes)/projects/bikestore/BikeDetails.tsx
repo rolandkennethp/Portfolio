@@ -133,9 +133,6 @@ export default function Bikedetails() {
           </div>
         </motion.div>
       </div>
-
-      {/* Divider */}
-      <div className="mt-13 border-t border-white/10" />
     </section>
   );
 }

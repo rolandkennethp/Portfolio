@@ -1,7 +1,6 @@
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/NavBar";
 import ProjectHero from "@/app/components/ProjectHero";
-import UnderDevelopment from "@/app/components/UnderDevelopment";
 import AvarthaDetails from "./AvarthaDetails";
 
 export default function AvarthaPage() {
