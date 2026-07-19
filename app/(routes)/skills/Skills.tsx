@@ -17,7 +17,14 @@ const disciplines = [
       "Clear, responsive product surfaces that make complex work feel natural.",
     detail:
       "From responsive systems to keyboard-ready interactions, I build interfaces that are equal parts precise, accessible, and alive.",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Accessibility"],
+    skills: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "HTML/CSS",
+    ],
   },
   {
     number: "02",
@@ -25,11 +32,12 @@ const disciplines = [
     statement:
       "Reliable application logic built for the moments when a product has to hold up.",
     detail:
-      "I design APIs, realtime flows, permissions, and data models with an eye on the product behavior people experience—not just the implementation.",
+      "I design APIs, authentication flows, and backend logic that power fast and scalable web applications.",
     skills: [
       "Node.js",
       "Express.js",
       "REST APIs",
+      "JWT",
       "Socket.IO",
       "Authentication",
     ],
@@ -40,8 +48,8 @@ const disciplines = [
     statement:
       "Structured foundations that give useful products a durable memory.",
     detail:
-      "I model the data behind a decision, keep it queryable, and make sure the interface can explain its state with confidence.",
-    skills: ["PostgreSQL", "Prisma", "Supabase", "SQL", "Data Modeling"],
+      "I design efficient database structures and connect them seamlessly with modern backend applications.",
+    skills: ["PostgreSQL", "Prisma", "SQL", "Supabase", "MongoDB", "Git"],
   },
 ];
 
@@ -100,7 +108,7 @@ export function Skills() {
                       >
                         {discipline.number}
                       </span>
-                      <span className="font-display text-4xl uppercase leading-none sm:text-5xl">
+                      <span className="font-display text-3xl uppercase leading-none sm:text-4xl">
                         {discipline.title}
                       </span>
                       <ArrowUpRightIcon
@@ -134,7 +142,7 @@ export function Skills() {
               >
                 <div className="absolute right-0 top-0 h-10 w-10 border-b border-l border-[#d4af37]/35" />
                 <p
-                  className={`${bebas.className} max-w-2xl font-display text-3xl uppercase leading-[0.95] text-[#f5f5f5] sm:text-4xl`}
+                  className={`${bebas.className} max-w-2xl font-display text-2xl uppercase leading-[0.95] text-[#f5f5f5] sm:text-3xl`}
                 >
                   {active.statement}
                 </p>
