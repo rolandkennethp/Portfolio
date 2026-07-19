@@ -15,6 +15,14 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
+    year: "2026",
+    category: "B2B ADMIN DASHBOARD",
+    title: "FARM2STORE",
+    description: "Every visit, accounted for.",
+    src: "/images/admin-01.png",
+    href: "/projects/adminpanel",
+  },
+  {
     year: "2025",
     category: "CHAT PLATFORM",
     title: "CHAT-TIME",
@@ -29,14 +37,6 @@ const PROJECTS: Project[] = [
     description: "Clarity for every moving part.",
     src: "/images/bike-01.png",
     href: "/projects/bikestore",
-  },
-  {
-    year: "2026",
-    category: "B2B ADMIN DASHBOARD",
-    title: "FARM2STORE",
-    description: "Every visit, accounted for.",
-    src: "/images/admin-01.png",
-    href: "/projects/adminpanel",
   },
   {
     year: "2026",

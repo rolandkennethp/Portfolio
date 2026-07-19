@@ -23,28 +23,28 @@ interface Screenshot {
 const SCREENSHOTS: Screenshot[] = [
   {
     number: "01",
-    category: "DISCOVER",
-    title: "Find your next ride",
+    category: "OPERATIONS",
+    title: "Run your business from one place",
     description:
-      "Browse premium motorcycles, compare models, and securely sign in to save favorites, manage your cart, and continue shopping.",
-    src: "/images/bike-02.png",
-    secondarySrc: "/images/bike-01.png",
+      "Get a complete overview of orders, revenue, sales trends, and inventory while accessing every management tool from a centralized dashboard..",
+    src: "/images/admin-01.png",
+    secondarySrc: "/images/admin-02.png",
   },
   {
     number: "02",
-    category: "CART",
-    title: "Ready for checkout",
+    category: "DELIVERY",
+    title: "Manage deliveries efficiently",
     description:
-      "Review selected bikes, adjust quantities, and complete your purchase with a clear, streamlined checkout experience.",
-    src: "/images/bike-03.png",
+      "Track shipment status, payment methods, customer information, and delivery progress through a streamlined management interface.",
+    src: "/images/admin-03.png",
   },
   {
     number: "03",
-    category: "REVIEWS",
-    title: "Hear from every rider",
+    category: "PRODUCTS",
+    title: "Keep inventory organized",
     description:
-      "Read authentic customer feedback, share your own experience, and help others choose with confidence.",
-    src: "/images/bike-04.png",
+      "Add, update, and manage products while monitoring stock levels and inventory availability from a dedicated management interface.",
+    src: "/images/admin-04.png",
   },
 ];
 
@@ -67,7 +67,7 @@ function ScreenshotImage({ src, alt, onExpand }: ScreenshotImageProps) {
   );
 }
 
-export default function BikeScreenshots() {
+export default function AdminScreenshots() {
   const [first, second, third] = SCREENSHOTS;
   const [expandedSrc, setExpandedSrc] = useState<string | null>(null);
 
@@ -103,7 +103,7 @@ export default function BikeScreenshots() {
           <h2
             className={`${bebas.className} mt-3 text-4xl tracking-wide text-white`}
           >
-            INSIDE BIKE-STORE.
+            INSIDE FARM2STORE.
           </h2>
         </div>
 
