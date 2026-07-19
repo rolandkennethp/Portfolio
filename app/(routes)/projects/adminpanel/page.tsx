@@ -1,7 +1,7 @@
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/NavBar";
 import ProjectHero from "@/app/components/ProjectHero";
-import UnderDevelopment from "@/app/components/UnderDevelopment";
+import AdminDetails from "./AdminDetails";
 
 export default function AdminPanelPage() {
   return (
@@ -14,7 +14,10 @@ export default function AdminPanelPage() {
         tagline="Built to keep businesses moving."
         description="A scalable B2B admin dashboard that streamlines products, orders, analytics, and business operations through a modern and intuitive interface."
       />
-      <UnderDevelopment />
+
+      <div className="p-0 py-10 md:py-16 md:px-20">
+        <AdminDetails />
+      </div>
       <Footer />
     </main>
   );

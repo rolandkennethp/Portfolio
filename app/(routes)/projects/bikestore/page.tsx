@@ -1,7 +1,7 @@
 import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/NavBar";
 import ProjectHero from "@/app/components/ProjectHero";
-import UnderDevelopment from "@/app/components/UnderDevelopment";
+import Bikedetails from "./BikeDetails";
 
 export default function BikeStorePage() {
   return (
@@ -14,7 +14,10 @@ export default function BikeStorePage() {
         tagline="Every ride begins with the right bike."
         description="A full-stack eCommerce application that enables users to explore motorcycles, read reviews, manage their cart, and complete purchases with ease."
       />
-      <UnderDevelopment />
+      <div className="p-0 py-10 md:py-16 md:px-20">
+        <Bikedetails />
+      </div>
+
       <Footer />
     </main>
   );

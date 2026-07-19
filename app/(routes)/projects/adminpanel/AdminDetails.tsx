@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function ChatDetails() {
+export default function AdminDetails() {
   return (
     <section className="w-full bg-[#0a0a0a] px-8 lg:px-16">
       {/* Overview */}
@@ -16,9 +16,10 @@ export default function ChatDetails() {
           OVERVIEW
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/60">
-          ChatTime is a full-stack real-time messaging platform where users can
-          connect, exchange instant messages, manage friendships, and
-          personalize their profiles through a fast, responsive interface.
+          A modern B2B admin dashboard built to centralize business operations
+          through a clean, scalable interface. It enables administrators to
+          monitor analytics, manage products and orders, oversee customers and
+          deliveries, and streamline day-to-day business workflows.
         </p>
       </motion.div>
 
@@ -39,10 +40,11 @@ export default function ChatDetails() {
             PROBLEM STATEMENT
           </p>
           <p className="mt-4 max-w-md text-base leading-relaxed text-white/60">
-            Building a modern chat application requires more than sending
-            messages. Users expect instant communication, live presence updates,
-            notifications, and secure authentication working together
-            seamlessly.
+            Managing a growing B2B platform requires multiple operational tools
+            working together. Administrators need a centralized system to track
+            sales, manage inventory, process orders, verify businesses, and
+            monitor customer activity without switching between disconnected
+            interfaces.
           </p>
         </motion.div>
 
@@ -56,10 +58,11 @@ export default function ChatDetails() {
             SOLUTION
           </p>
           <p className="mt-4 max-w-md text-base leading-relaxed text-white/60">
-            I built a full-stack messaging platform powered by Socket.IO,
-            delivering real-time messaging, friend management, live
-            notifications, and secure authentication in a responsive user
-            experience.
+            I built a scalable admin dashboard using Next.js and Prisma,
+            providing secure authentication, real-time business insights,
+            product and order management, customer administration, interactive
+            analytics, and a responsive interface designed for efficient
+            business operations.
           </p>
         </motion.div>
       </div>
@@ -83,12 +86,17 @@ export default function ChatDetails() {
           </p>
           <ul className="mt-4 space-y-3">
             {[
-              "Real-time one-to-one messaging",
-              "Read receipts & seen status",
-              "Friend request system",
-              "Live notifications",
-              "View & update profile",
-              "User search",
+              "Dashboard analytics",
+              "Product management",
+              "Order management",
+              "Sales tracking",
+              "Customer management",
+              "Business verification",
+              "Delivery management",
+              "Secure authentication",
+              "Interactive data visualization",
+              "Inventory management",
+              "CSV report export",
             ].map((feature) => (
               <li
                 key={feature}
@@ -112,17 +120,14 @@ export default function ChatDetails() {
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             {[
-              "TypeScript",
               "Next.js",
               "React",
+              "TypeScript",
               "PostgreSQL",
-              "Node.js",
               "Prisma",
-              "Socket.IO",
-              "Tailwind CSS",
               "Auth.js",
               "Supabase",
-              "Cloudinary",
+              "Tailwind CSS",
             ].map((tech) => (
               <span
                 key={tech}

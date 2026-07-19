@@ -2,6 +2,7 @@ import Footer from "@/app/components/Footer";
 import Navbar from "@/app/components/NavBar";
 import ProjectHero from "@/app/components/ProjectHero";
 import UnderDevelopment from "@/app/components/UnderDevelopment";
+import AvarthaDetails from "./AvarthaDetails";
 
 export default function AvarthaPage() {
   return (
@@ -14,7 +15,9 @@ export default function AvarthaPage() {
         tagline="Helping businesses make a lasting impact."
         description="A modern company website designed to showcase services, products, and company values through a fast, responsive, and engaging user experience."
       />
-      <UnderDevelopment />
+      <div className="p-0 py-10 md:py-16 md:px-20">
+        <AvarthaDetails />
+      </div>
       <Footer />
     </main>
   );

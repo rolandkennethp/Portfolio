@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function ChatDetails() {
+export default function AvarthaDetails() {
   return (
     <section className="w-full bg-[#0a0a0a] px-8 lg:px-16">
       {/* Overview */}
@@ -16,9 +16,10 @@ export default function ChatDetails() {
           OVERVIEW
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/60">
-          ChatTime is a full-stack real-time messaging platform where users can
-          connect, exchange instant messages, manage friendships, and
-          personalize their profiles through a fast, responsive interface.
+          A modern company portfolio website built to establish a strong digital
+          presence for Avartha Eco Solutions. The website showcases the
+          company&apos;s services, mission, and brand through a clean,
+          responsive, and performance-focused interface.
         </p>
       </motion.div>
 
@@ -39,10 +40,10 @@ export default function ChatDetails() {
             PROBLEM STATEMENT
           </p>
           <p className="mt-4 max-w-md text-base leading-relaxed text-white/60">
-            Building a modern chat application requires more than sending
-            messages. Users expect instant communication, live presence updates,
-            notifications, and secure authentication working together
-            seamlessly.
+            Businesses need a professional online presence that clearly
+            communicates their brand, services, and values. The challenge was
+            creating a fast, responsive website that delivers a polished user
+            experience while remaining easy to maintain and scale.
           </p>
         </motion.div>
 
@@ -56,10 +57,10 @@ export default function ChatDetails() {
             SOLUTION
           </p>
           <p className="mt-4 max-w-md text-base leading-relaxed text-white/60">
-            I built a full-stack messaging platform powered by Socket.IO,
-            delivering real-time messaging, friend management, live
-            notifications, and secure authentication in a responsive user
-            experience.
+            I developed a modern corporate website using Next.js, focusing on
+            responsive layouts, reusable components, and performance
+            optimization to provide a seamless browsing experience across all
+            devices.
           </p>
         </motion.div>
       </div>
@@ -83,12 +84,12 @@ export default function ChatDetails() {
           </p>
           <ul className="mt-4 space-y-3">
             {[
-              "Real-time one-to-one messaging",
-              "Read receipts & seen status",
-              "Friend request system",
-              "Live notifications",
-              "View & update profile",
-              "User search",
+              "Responsive design",
+              "Clean and modern interface",
+              "Performance optimized",
+              "Component-based architecture",
+              "Mobile-friendly layout",
+              "Reusable UI components",
             ].map((feature) => (
               <li
                 key={feature}
@@ -111,19 +112,7 @@ export default function ChatDetails() {
             TECH STACK
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            {[
-              "TypeScript",
-              "Next.js",
-              "React",
-              "PostgreSQL",
-              "Node.js",
-              "Prisma",
-              "Socket.IO",
-              "Tailwind CSS",
-              "Auth.js",
-              "Supabase",
-              "Cloudinary",
-            ].map((tech) => (
+            {["Next.js", "React", "Tailwind CSS"].map((tech) => (
               <span
                 key={tech}
                 className="rounded-full border border-white/15 px-4 py-1.5 text-sm text-white/70"

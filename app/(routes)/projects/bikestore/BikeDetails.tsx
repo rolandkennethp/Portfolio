@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 
-export default function ChatDetails() {
+export default function Bikedetails() {
   return (
     <section className="w-full bg-[#0a0a0a] px-8 lg:px-16">
       {/* Overview */}
@@ -16,9 +16,10 @@ export default function ChatDetails() {
           OVERVIEW
         </p>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-white/60">
-          ChatTime is a full-stack real-time messaging platform where users can
-          connect, exchange instant messages, manage friendships, and
-          personalize their profiles through a fast, responsive interface.
+          Bike Store is a full-stack e-commerce platform built with the MERN
+          stack, allowing users to browse, search, and purchase bikes while
+          providing administrators with tools to manage products, users, and
+          customer reviews.
         </p>
       </motion.div>
 
@@ -39,10 +40,11 @@ export default function ChatDetails() {
             PROBLEM STATEMENT
           </p>
           <p className="mt-4 max-w-md text-base leading-relaxed text-white/60">
-            Building a modern chat application requires more than sending
-            messages. Users expect instant communication, live presence updates,
-            notifications, and secure authentication working together
-            seamlessly.
+            Building an e-commerce platform involves more than displaying
+            products. Users need a smooth shopping experience with
+            authentication, search, cart management, and secure checkout, while
+            administrators require efficient tools to manage inventory and
+            customer activity.
           </p>
         </motion.div>
 
@@ -83,12 +85,12 @@ export default function ChatDetails() {
           </p>
           <ul className="mt-4 space-y-3">
             {[
-              "Real-time one-to-one messaging",
-              "Read receipts & seen status",
-              "Friend request system",
-              "Live notifications",
-              "View & update profile",
-              "User search",
+              "User authentication",
+              "Browse all available bikes",
+              "Shopping cart management",
+              "Customer review system",
+              "Admin product management",
+              "User management dashboard",
             ].map((feature) => (
               <li
                 key={feature}
@@ -112,17 +114,14 @@ export default function ChatDetails() {
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
             {[
-              "TypeScript",
-              "Next.js",
+              "JavaScript",
               "React",
-              "PostgreSQL",
               "Node.js",
-              "Prisma",
-              "Socket.IO",
+              "Express.js",
+              "MongoDB",
+              "Mongoose",
               "Tailwind CSS",
-              "Auth.js",
-              "Supabase",
-              "Cloudinary",
+              "UIVerse",
             ].map((tech) => (
               <span
                 key={tech}

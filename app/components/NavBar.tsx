@@ -31,11 +31,6 @@ export default function Navbar() {
     };
   }, [isMenuOpen]);
 
-  // Close the mobile menu automatically if the route changes
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
-
   return (
     <header className="w-full backdrop-blur-3xl bg-[#0a0a0a]/67 border-b-[0.5px] top-0 sticky z-40 border-white/14">
       <nav className="flex h-fit py-3 w-full items-center justify-between px-8 lg:px-16">
