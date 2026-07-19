@@ -128,11 +128,11 @@ export default function BikeScreenshots() {
             onExpand={setExpandedSrc}
           />
 
-          <div className="px-6 py-2">
+          <div className="px-6 sm:py-2 py-3">
             <p className="text-xs font-semibold tracking-[0.15em] text-[#D4B03A]">
               {first.number} / {first.category}
             </p>
-            <h3 className="mt-2 text-lg font-semibold text-white">
+            <h3 className="mt-2 sm:text-lg font-semibold text-white">
               {first.title}
             </h3>
             <p className="mt-2 text-sm text-white/50">{first.description}</p>
@@ -170,11 +170,11 @@ export default function BikeScreenshots() {
                 onExpand={setExpandedSrc}
               />
 
-              <div className="px-6 py-2">
+              <div className="px-6 sm:py-2 py-3">
                 <p className="text-xs font-semibold tracking-[0.15em] text-[#D4B03A]">
                   {shot.number} / {shot.category}
                 </p>
-                <h3 className="mt-2 text-lg font-semibold text-white">
+                <h3 className="mt-2 sm:text-lg font-semibold text-white">
                   {shot.title}
                 </h3>
                 <p className="mt-2 text-sm text-white/50">{shot.description}</p>

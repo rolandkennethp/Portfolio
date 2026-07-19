@@ -23,12 +23,12 @@ export default function ChatDetails() {
       </motion.div>
 
       {/* Divider */}
-      <div className="mt-13 grid grid-cols-1">
+      <div className="mt-13 hidden sm:grid grid-cols-1">
         <div className="border-t border-white/10" />
       </div>
 
       {/* Problem statement + Solution */}
-      <div className="mt-13 grid grid-cols-1 gap-10 lg:grid-cols-2">
+      <div className="mt-13 hidden sm:grid grid-cols-1 gap-10 lg:grid-cols-2">
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -65,7 +65,7 @@ export default function ChatDetails() {
       </div>
 
       {/* Divider */}
-      <div className="mt-13 grid grid-cols-1 gap-10 lg:grid-cols-2">
+      <div className="mt-13 hidden sm:grid grid-cols-1 gap-10 lg:grid-cols-2">
         <div className="border-t border-white/10" />
         <div className="border-t border-white/10" />
       </div>
@@ -107,7 +107,7 @@ export default function ChatDetails() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
         >
-          <p className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
+          <p className="text-xs mt-3 sm:mt-0 font-semibold tracking-[0.2em] text-[#D4B03A]">
             TECH STACK
           </p>
           <div className="mt-4 flex flex-wrap gap-3">

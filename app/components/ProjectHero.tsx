@@ -26,7 +26,7 @@ export default function ProjectHero({
   description,
 }: ProjectHeroProps) {
   return (
-    <section className="relative w-full overflow-hidden border-b border-white/15 lg:pr-70 bg-[#0a0a0a] px-8 py-24 lg:px-36">
+    <section className="relative w-full overflow-hidden border-b border-white/15 lg:pr-70 bg-[#0a0a0a] px-8 sm:py-24 pt-10 pb-10 lg:px-36">
       {/* Grain / TV static texture */}
       <svg className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.18]">
         <filter id="project-hero-noise">
@@ -54,14 +54,14 @@ export default function ProjectHero({
         </Link>
       </motion.div>
 
-      <div className="relative mt-16 gap-10 ">
+      <div className="relative sm:mt-16 mt-30 gap-10 ">
         {/* Left column */}
         <div>
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]"
+            className="sm:text-xs text-[10px] font-semibold tracking-[0.2em] text-[#D4B03A]"
           >
             {year} <span className="mx-2 text-white/30">/</span>{" "}
             {category.toUpperCase()}
@@ -71,17 +71,17 @@ export default function ProjectHero({
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className={`${bebas.className} mt-4 text-8xl leading-none tracking-wide text-white sm:text-9xl`}
+            className={`${bebas.className} mt-4 text-6xl leading-none tracking-wide text-white sm:text-9xl`}
           >
             {title}
           </motion.h1>
 
-          <div className="flex flex-col mt-6 md:flex-row md:justify-between">
+          <div className="flex flex-col gap-3 sm:gap-0 mt-6 md:flex-row md:justify-between">
             <motion.p
               initial={{ opacity: 0, y: 12 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3, ease: "easeOut" }}
-              className=" text-[16px] text-[#D4B03A]"
+              className=" sm:text-[16px] text-[15px] text-[#D4B03A]"
             >
               {tagline}
             </motion.p>

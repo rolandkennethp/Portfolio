@@ -38,7 +38,7 @@ export default function AdminPanelPage() {
           href="https://github.com/rolandkennethp/adminDashboard"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex mx-8 lg:mx-16 items-center gap-3 p-3 border border-white/20  hover:border-white/80 w-fit text-sm text-white transition-colors hover:text-white"
+          className="flex mx-8 mt-6 sm:mt-2 lg:mx-16 items-center gap-3 p-3 border border-white/20  hover:border-white/80 w-fit text-sm text-white transition-colors hover:text-white"
         >
           <GithubIcon size={16} />
           Repository
