@@ -16,7 +16,7 @@ export default function ResumePage() {
       />
       <div className="flex flex-col gap-8 justify-center px-5 items-center sm:my-18 my-10">
         <Image
-          src="/resume/cv.jpg"
+          src="/resume/cv1.jpg"
           alt="Profile"
           width={600}
           height={400}
