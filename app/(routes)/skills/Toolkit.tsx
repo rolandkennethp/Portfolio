@@ -35,6 +35,7 @@ const CATEGORIES: SkillCategory[] = [
     items: [
       "Node.js",
       "Spring Boot",
+      "GO",
       "Express.js",
       "REST APIs",
       "JWT Authentication",
