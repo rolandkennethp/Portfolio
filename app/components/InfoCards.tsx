@@ -38,7 +38,11 @@ const CARDS: InfoCard[] = [
 export default function InfoCards() {
   return (
     <section className="w-full bg-[#0a0a0a] px-8 sm:py-24 py-10 border-t border-white/15 lg:px-51">
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div
+        className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-2
+                   [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+                   sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:pb-0 lg:grid-cols-3"
+      >
         {CARDS.map((card, index) => (
           <motion.div
             key={card.number}
@@ -47,7 +51,9 @@ export default function InfoCards() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5, delay: index * 0.12, ease: "easeOut" }}
             whileHover={{ y: -6 }}
-            className="border border-white/15 bg-[#0e0d09] p-8 transition-colors hover:border-white/30"
+            className="border border-white/15 bg-[#0e0d09] p-8 transition-colors hover:border-white/30
+                       shrink-0 w-[90%] snap-center
+                       sm:w-auto sm:shrink"
           >
             <span className="text-xs font-semibold tracking-[0.2em] text-[#D4B03A]">
               {card.number}
