@@ -19,7 +19,7 @@ const PROJECTS: Project[] = [
     category: "B2B ADMIN DASHBOARD",
     title: "FARM2STORE",
     description: "Every visit, accounted for.",
-    src: "/images/admin-01.png",
+    src: "/images/roland-kenneth-p-admin-01.png",
     href: "/projects/adminpanel",
   },
   {
@@ -27,7 +27,7 @@ const PROJECTS: Project[] = [
     category: "CHAT PLATFORM",
     title: "CHAT-TIME",
     description: "The story never sleeps.",
-    src: "/images/chat-01.png",
+    src: "/images/roland-kenneth-p-chat-01.png",
     href: "/projects/chattime",
   },
   {
@@ -35,7 +35,7 @@ const PROJECTS: Project[] = [
     category: "E-COMMERCE PLATFORM",
     title: "BIKE STORE",
     description: "Clarity for every moving part.",
-    src: "/images/bike-01.png",
+    src: "/images/roland-kenneth-p-bike-01.png",
     href: "/projects/bikestore",
   },
   {
@@ -43,7 +43,7 @@ const PROJECTS: Project[] = [
     category: "PORTFOLIO WEBSITE",
     title: "AVARTHA",
     description: "Every visit, accounted for.",
-    src: "/images/avartha-01.png",
+    src: "/images/roland-kenneth-p-avartha-01.png",
     href: "/projects/avartha",
   },
 ];

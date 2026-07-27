@@ -15,8 +15,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Roland Kenneth P | Full Stack Developer",
   description:
-    "Portfolio of Roland Kenneth P, a Full Stack Developer specializing in Next.js, React, TypeScript, Node.js, and PostgreSQL.",
+    "Roland Kenneth P is a Full Stack Developer from Bangalore specializing in Next.js, React, Node.js, PostgreSQL, and modern web applications.",
+  keywords: [
+    "Roland Kenneth P",
+    "Roland Kenneth",
+    "Full Stack Developer Bangalore",
+    "Next.js Developer Bangalore",
+    "React Developer Bangalore",
+    "Software Developer",
+  ],
+  authors: [{ name: "Roland Kenneth P" }],
+  creator: "Roland Kenneth P",
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +38,30 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Roland Kenneth P",
+              url: "https://rolandkenneth.vercel.app/",
+              jobTitle: "Full Stack Developer",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Bangalore",
+                addressCountry: "India",
+              },
+              sameAs: [
+                "https://github.com/rolandkennethp",
+                "https://www.linkedin.com/in/rolandkennethp/",
+              ],
+            }),
+          }}
+        />
+        {children}
+      </body>
     </html>
   );
 }

@@ -63,7 +63,7 @@ export default function Hero() {
               <ArrowUpRight size={16} />
             </a>
             <a
-              href="/resume/cv.pdf"
+              href="/resume/roland-kenneth-p-cv.pdf"
               download
               className="flex items-center gap-2 border tracking-wider border-white/25 px-6 py-3 text-[13px] font-light  text-white transition-colors hover:border-white/50"
             >

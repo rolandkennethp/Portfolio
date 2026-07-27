@@ -27,8 +27,8 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Run your business from one place",
     description:
       "Get a complete overview of orders, revenue, sales trends, and inventory while accessing every management tool from a centralized dashboard..",
-    src: "/images/admin-01.png",
-    secondarySrc: "/images/admin-02.png",
+    src: "/images/roland-kenneth-p-admin-01.png",
+    secondarySrc: "/images/roland-kenneth-p-admin-02.png",
   },
   {
     number: "02",
@@ -36,7 +36,7 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Manage deliveries efficiently",
     description:
       "Track shipment status, payment methods, customer information, and delivery progress through a streamlined management interface.",
-    src: "/images/admin-03.png",
+    src: "/images/roland-kenneth-p-admin-03.png",
   },
   {
     number: "03",
@@ -44,7 +44,7 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Keep inventory organized",
     description:
       "Add, update, and manage products while monitoring stock levels and inventory availability from a dedicated management interface.",
-    src: "/images/admin-04.png",
+    src: "/images/roland-kenneth-p-admin-04.png",
   },
 ];
 

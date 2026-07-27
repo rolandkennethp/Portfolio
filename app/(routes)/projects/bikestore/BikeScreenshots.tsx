@@ -27,8 +27,8 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Find your next ride",
     description:
       "Browse premium motorcycles, compare models, and securely sign in to save favorites, manage your cart, and continue shopping.",
-    src: "/images/bike-02.png",
-    secondarySrc: "/images/bike-01.png",
+    src: "/images/roland-kenneth-p-bike-02.png",
+    secondarySrc: "/images/roland-kenneth-p-bike-01.png",
   },
   {
     number: "02",
@@ -36,7 +36,7 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Ready for checkout",
     description:
       "Review selected bikes, adjust quantities, and complete your purchase with a clear, streamlined checkout experience.",
-    src: "/images/bike-03.png",
+    src: "/images/roland-kenneth-p-bike-03.png",
   },
   {
     number: "03",
@@ -44,7 +44,7 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Hear from every rider",
     description:
       "Read authentic customer feedback, share your own experience, and help others choose with confidence.",
-    src: "/images/bike-04.png",
+    src: "/images/roland-kenneth-p-bike-04.png",
   },
 ];
 

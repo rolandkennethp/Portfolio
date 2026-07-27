@@ -27,15 +27,15 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Conversations begin here",
     description:
       "Create an account and start connecting with friends in seconds.",
-    src: "/images/chat-012.png",
-    secondarySrc: "/images/chat-01.png",
+    src: "/images/roland-kenneth-p-chat-012.png",
+    secondarySrc: "/images/roland-kenneth-p-chat-01.png",
   },
   {
     number: "02",
     category: "PROFILE",
     title: "Your network, all in one place",
     description: "Manage your profile, discover friends, and grow your circle.",
-    src: "/images/chat-03.png",
+    src: "/images/roland-kenneth-p-chat-03.png",
   },
   {
     number: "03",
@@ -43,7 +43,7 @@ const SCREENSHOTS: Screenshot[] = [
     title: "Never miss a message",
     description:
       "Stay updated with friend requests, new messages, and important activity.",
-    src: "/images/chat-04.png",
+    src: "/images/roland-kenneth-p-chat-04.png",
   },
 ];
 

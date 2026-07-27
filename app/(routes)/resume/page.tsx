@@ -16,14 +16,14 @@ export default function ResumePage() {
       />
       <div className="flex flex-col gap-8 justify-center px-5 items-center sm:my-18 my-10">
         <Image
-          src="/resume/cv1.jpg"
+          src="/resume/roland-kenneth-p-cv1.jpg"
           alt="Profile"
           width={600}
           height={400}
           className="shadow-lg shadow-[#D4B03A]/20"
         />
         <a
-          href="/resume/cv.pdf"
+          href="/resume/roland-kenneth-p-cv.pdf"
           download
           className="flex items-center gap-2 tracking-wider px-6 py-3 text-[13px]  text-[#0a0a0a] bg-[#D4B03A] hover:shadow-xl hover:-translate-y-1 transition-all shadow-[yellow]/20 hover:border-white/50"
         >

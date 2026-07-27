@@ -40,7 +40,7 @@ export default function InfoCards() {
     <section className="w-full bg-[#0a0a0a] px-8 sm:py-24 py-10 border-t border-white/15 lg:px-51">
       <div
         className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-2
-                   [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden
+                   [-ms-overflow-style:none] scrollbar-none [&::-webkit-scrollbar]:hidden
                    sm:grid sm:grid-cols-2 sm:gap-6 sm:overflow-visible sm:pb-0 lg:grid-cols-3"
       >
         {CARDS.map((card, index) => (
